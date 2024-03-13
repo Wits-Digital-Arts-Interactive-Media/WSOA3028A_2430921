@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Portfolio"
+    "\\Blog",
+    "\\Blog\\BlogPics"
   ],
-  "SelectedNode": "\\Portfolio\\Sun",
+  "SelectedNode": "\\Blog\\blogPost1.html",
   "PreviewInSolutionExplorer": false
 }
