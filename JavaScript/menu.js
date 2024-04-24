@@ -14,13 +14,13 @@ const menuItems =
     ];
 
 export function initialize(currentPage) {
-    var nav = document.querySelector("header > nav")
-    var ul = document.createElement("ul")
+    const nav = document.querySelector("header > nav")
+    const ul = document.createElement("ul")
 
     for (let menuItem of menuItems) {
         if (currentPage != menuItem.name) {
-            var li = document.createElement("li")
-            var a = document.createElement("a")
+            const li = document.createElement("li")
+            const a = document.createElement("a")
             a.innerText = menuItem.name
             a.setAttribute("href", menuItem.href)
             li.appendChild(a)
