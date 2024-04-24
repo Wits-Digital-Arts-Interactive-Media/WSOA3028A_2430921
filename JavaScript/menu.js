@@ -1,5 +1,5 @@
 // JavaScript source code
-const root = "/WSOA3028_2430921"
+const root = "/WSOA3028A_2430921"
 
 const menuItems =
     [
