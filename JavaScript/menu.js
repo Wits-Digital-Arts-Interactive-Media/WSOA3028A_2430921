@@ -3,11 +3,11 @@ const root = "/WSOA3028A_2430921"
 
 const menuItems =
     [
-        { name: "Home", href: root + `${root}/index.html` },
-        { name: "Blog", href: root + `${root}/Blogs/blog.html` },
-        { name: "Essays", href: root + `${root}/Essays/index.html` },
-        { name: "Portfolio", href: root + `${root}/Portfolio/portfolio.html` },
-        { name: "Design", href: root + `${root}/Designs/designs.html` },
+        { name: "Home", href: `${root}/index.html` },
+        { name: "Blog", href: `${root}/Blogs/blog.html` },
+        { name: "Essays", href: `${root}/Essays/index.html` },
+        { name: "Portfolio", href: `${root}/Portfolio/portfolio.html` },
+        { name: "Design", href: `${root}/Designs/designs.html` },
 
 
 
