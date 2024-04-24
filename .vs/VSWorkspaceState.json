@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Blog"
+    "\\Blog\\BlogPics",
+    "\\Essays"
   ],
-  "SelectedNode": "\\Essays",
+  "SelectedNode": "\\Essays\\essays.html",
   "PreviewInSolutionExplorer": false
 }
