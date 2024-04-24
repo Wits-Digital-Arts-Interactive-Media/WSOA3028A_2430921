@@ -20,7 +20,6 @@ export function initialise(currentPage) {
     for (let menuItem of menuItems) {
         const li = document.createElement("li")
         if (currentPage != menuItem.name) {
-            const li = document.createElement("li")
             const a = document.createElement("a")
             a.innerText = menuItem.name
             a.setAttribute("href", menuItem.href)
