@@ -4,10 +4,10 @@ const root = "/WSOA3028A_2430921"
 const menuItems =
     [
         { name: "Home", href: root + "index/html" },
-        { name: "Blog", href: root + `${root}/Blogs/index.html` },
+        { name: "Blog", href: root + `${root}/Blogs/blog.html` },
         { name: "Essays", href: root + `${root}/Essays/index.html` },
-        { name: "Portfolio", href: root + `${root}/Portfolio/index.html` },
-        { name: "Design", href: root + `${root}/Designs/index.html` },
+        { name: "Portfolio", href: root + `${root}/Portfolio/portfolio.html` },
+        { name: "Design", href: root + `${root}/Designs/designs.html` },
 
 
 
