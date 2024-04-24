@@ -3,7 +3,7 @@ const root = "/WSOA3028A_2430921"
 
 const menuItems =
     [
-        { name: "Home", href: root + "index/html" },
+        { name: "Home", href: root + `${root}/index.html` },
         { name: "Blog", href: root + `${root}/Blogs/blog.html` },
         { name: "Essays", href: root + `${root}/Essays/index.html` },
         { name: "Portfolio", href: root + `${root}/Portfolio/portfolio.html` },
@@ -11,21 +11,23 @@ const menuItems =
 
 
 
-    ];
+    ]
 
 export function initialise(currentPage) {
     const nav = document.querySelector("header > nav")
     const ul = document.createElement("ul")
 
     for (let menuItem of menuItems) {
+        const li = document.createElement("li")
         if (currentPage != menuItem.name) {
             const li = document.createElement("li")
             const a = document.createElement("a")
             a.innerText = menuItem.name
             a.setAttribute("href", menuItem.href)
             li.appendChild(a)
-            ul.appendChild(li)
-        }
+           
+        } else (li.innerText = menuItem.name)
+        ul.appendChild(li)
     }
     nav.appendChild(ul)
 }
