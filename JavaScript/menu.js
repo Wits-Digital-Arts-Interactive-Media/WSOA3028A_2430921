@@ -13,7 +13,7 @@ const menuItems =
 
     ];
 
-export function initialize(currentPage) {
+export function initialise(currentPage) {
     const nav = document.querySelector("header > nav")
     const ul = document.createElement("ul")
 
