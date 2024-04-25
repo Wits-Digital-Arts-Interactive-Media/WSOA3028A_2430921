@@ -12,7 +12,7 @@ const menuItems =
 
 const blogPages =
     [
-        {name :"Blog 1"},
+        {name :"Blog-1"},
     ]
 
 export function initialise(currentPage) {
