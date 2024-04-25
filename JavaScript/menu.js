@@ -1,4 +1,4 @@
-// JavaScript source code
+//Pages Index Code
 const root = "/WSOA3028A_2430921"
 
 const menuItems =
@@ -12,7 +12,7 @@ const menuItems =
 
 const blogPages =
     [
-        {name :"Blog-1"},
+        {name :"blogs"},
     ]
 
 export function initialise(currentPage) {
