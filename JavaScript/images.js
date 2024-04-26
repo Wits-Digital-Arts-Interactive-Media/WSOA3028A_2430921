@@ -19,9 +19,9 @@ export function initialise(folder, numOfPics) {
     
     for (var i = 1; i <= numOfPics; i++) {
        
-        img[i].src = (`${folder}/${folder}${i}.jpg`)
-        img[i].width = img[i].naturalHeight/4
-        img[i].height = img[i].naturalWidth/4
+        img[i-1].src = (`${folder}/${folder}${i}.jpg`)
+        img[i-1].width = img[i].naturalHeight/4
+        img[i-1].height = img[i].naturalWidth/4
         document.body.appendChild(img[i])
         img.push(document.createElement('img'))
     }
