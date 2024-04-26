@@ -9,8 +9,12 @@ export function initialise(folder, numOfPics) {
     const img = [
         document.createElement('img'),
     ]
+    img[0].src = (`/WSOA3028A_2430921/Portfolio/Pictures/Animals/Animals.jpg`)
+    img[0].width = 400
+    img[0].height = 400
+    document.body.appendChild(img[0])
 
-
+    /*
     for (var i = 1; i <= numOfPics; i++) {
         img[i].src = (`/WSOA3028A_2430921/Portfolio/Pictures/${folder}/${folder}${i}.jpg`)
         img[i].width = 400
@@ -20,6 +24,7 @@ export function initialise(folder, numOfPics) {
         document.body.appendChild(img[i])
         img.push(document.createElement('img'))
     }
-    // Append the img element to the document body or another element 
+    */
+
 
 }
