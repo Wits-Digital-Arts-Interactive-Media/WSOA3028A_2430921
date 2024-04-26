@@ -22,7 +22,7 @@ export function initialise(folder, numOfPics) {
         img[i-1].src = (`${folder}/${folder}${i}.jpg`)
         img[i-1].width = img[i-1].naturalHeight/4
         img[i-1].height = img[i-1].naturalWidth/4
-        document.body.appendChild(img[i])
+        document.body.appendChild(img[i-1])
         img.push(document.createElement('img'))
     }
     
