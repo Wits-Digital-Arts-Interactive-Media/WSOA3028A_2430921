@@ -9,7 +9,7 @@ export function initialise(folder, numOfPics) {
     const img = [
         document.createElement('img'),
     ]
-    img[0].src = (`Pictures/Animals/Animals1.jpg`)
+    img[0].src = (`Animals/Animals1.jpg`)
     img[0].width = 400
     img[0].height = 400
     document.body.appendChild(img[0])
