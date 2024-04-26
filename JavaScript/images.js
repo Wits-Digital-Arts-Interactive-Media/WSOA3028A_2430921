@@ -11,10 +11,12 @@ export function initialise(folder, numOfPics) {
     ]
 
 
-    for (var i = 0; i < numOfPics; i++) {
-        img[i].src = (`/WSOA3028A_2430921/Portfolio/Pictures/${folder}/${folder}${i}.jpg`)
-        img[i].width = img[i].naturalHeight/4
-        img[i].height = img[i].naturalWidth/4
+    for (var i = 1; i <= numOfPics; i++) {
+        img[i].src = (`WSOA3028A_2430921/Portfolio/Pictures/${folder}/${folder}${i}.jpg`)
+        img[i].width = 400
+        img[i].height = 400
+        //img[i].width = img[i].naturalHeight/4
+        //img[i].height = img[i].naturalWidth/4
         document.body.appendChild(img[i])
         img.push(document.createElement('img'))
     }
