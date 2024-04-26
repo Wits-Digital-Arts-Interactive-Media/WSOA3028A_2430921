@@ -7,9 +7,9 @@ const root = "/WSOA3028A_2430921/Portfolio"
 export function initialise() {
 
     const img = [
-        document.createElement('img1'),
+        document.createElement('img'),
     ]
-    img.push(document.createElement('img2'))
+    img.push(document.createElement('img'))
     // Set the src attribute to the URL of the image 
     img[0].src = ("WSOA3028A_2430921\Portfolio\Pictures\Landscape1.jpg")
     img[0].width = 300
