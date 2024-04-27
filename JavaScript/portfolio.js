@@ -28,7 +28,7 @@ export function initialise(numOfPics) {
         document.body.appendChild(img[i - 1])
         img.push(document.createElement('img'))
         img[i - 1].onclick = function (event) {
-            window.location.href = this.id + `${portfolioItems[i-1]}/portfolio.html`;
+            window.location.href = `${portfolioItems[i-1]}/portfolio.html`;
         };
     }
 

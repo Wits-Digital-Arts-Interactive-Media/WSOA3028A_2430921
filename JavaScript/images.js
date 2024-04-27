@@ -6,10 +6,16 @@ const root = "/WSOA3028A_2430921/Portfolio"
 
 export function initialise(folder, numOfPics) {
 
+    /*
     const img = [
         document.createElement('img'),
-    ]
-        
+    ]*/
+
+    const wideImg
+    const tallImg
+
+    var wideCount = 0
+    var tallCount = 0
         /*
     img[0].src = (`Animals/Animals1.jpg`)
     img[0].width = 400
@@ -17,14 +23,31 @@ export function initialise(folder, numOfPics) {
     document.body.appendChild(img[0])
     */
     
-    for (var i = 1; i <= numOfPics; i++) {
-       
-        img[i - 1].src = (`${folder}${i}.jpg`)
+    for (var i = 0; i < numOfPics; i++) {
+
+        const img = document.createElement('img')
+        img.src = (`${folder}${i}.jpg`)
+        if (img.naturalWidth < img.naturalHeight) {
+            tallImg.push(document.createElement('img'))
+            tallImg[tallCount].src = (`${folder}${i}.jpg`)
+            tallImg[tallCount].width = tallImg[tallCount].naturalWidth / 12
+            tallImg[tallCount].height = tallImg[tallCount].naturalHeight / 12
+            document.body.appendChild(tallImg[tallCount])
+            tallCount++
+        } else {
+            wideImg.push(document.createElement('img'))
+            wideImg[wideCount].src = (`${folder}${i}.jpg`)
+            wideImg[wideCount].width = wideImg[wideCount].naturalWidth / 12
+            wideImg[wideCount].height = wideImg[wideCount].naturalHeight / 12
+            document.body.appendChild(wideImg[wideCount])
+            wideCount++
+        }
+        /*img[i - 1].src = (`${folder}${i}.jpg`)
 
         img[i-1].width = img[i-1].naturalWidth/12
         img[i-1].height = img[i-1].naturalHeight/12
         document.body.appendChild(img[i-1])
-        img.push(document.createElement('img'))
+        img.push(document.createElement('img'))*/
     }
     
 
