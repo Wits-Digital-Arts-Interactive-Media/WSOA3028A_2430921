@@ -23,7 +23,8 @@ export function initialise(folder, numOfPics) {
         img[i - 1].width = 400
         img[i - 1].height = 400
         
-        console.log("Originals: " + img[i - 1].naturalHeight + " " + img[i - 1].naturalWidth )
+        console.log("Originals: " + img[i - 1].naturalHeight + " " + img[i - 1].naturalWidth)
+        console.log("Fake: " + img[i - 1].height + " " + img[i - 1].width)
         /*img[i-1].width = img[i-1].naturalHeight/4
         img[i-1].height = img[i-1].naturalWidth/4*/
         document.body.appendChild(img[i-1])
