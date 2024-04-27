@@ -27,23 +27,28 @@ export function initialise(folder, numOfPics) {
     document.body.appendChild(img[0])
     */
     
-    for (var i = 0; i < numOfPics; i++) {
+    for (var i = 1; i <= numOfPics; i++) {
 
         const img = document.createElement('img')
         img.src = (`${folder}${i}.jpg`)
         if (img.naturalWidth < img.naturalHeight) {
 
             tallImg[tallCount].src = (`${folder}${i}.jpg`)
-            tallImg[tallCount].width = tallImg[tallCount].naturalWidth / 12
-            tallImg[tallCount].height = tallImg[tallCount].naturalHeight / 12
+            tallImg[tallCount].onload = function () {
+                tallImg[tallCount].width = tallImg[tallCount].naturalWidth / 12
+                tallImg[tallCount].height = tallImg[tallCount].naturalHeight / 12
+            }
+
             document.body.appendChild(tallImg[tallCount])
             tallCount++
             tallImg.push(document.createElement('img'))
         } else {
 
             wideImg[wideCount].src = (`${folder}${i}.jpg`)
-            wideImg[wideCount].width = wideImg[wideCount].naturalWidth / 12
-            wideImg[wideCount].height = wideImg[wideCount].naturalHeight / 12
+            wideImg[wideCount].onload = function () {
+                wideImg[wideCount].width = wideImg[wideCount].naturalWidth / 12
+                wideImg[wideCount].height = wideImg[wideCount].naturalHeight / 12
+            }
             document.body.appendChild(wideImg[wideCount])
             wideCount++
             wideImg.push(document.createElement('img'))
