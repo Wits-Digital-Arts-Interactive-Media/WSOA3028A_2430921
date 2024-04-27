@@ -19,12 +19,8 @@ export function initialise(folder, numOfPics) {
     
     for (var i = 1; i <= numOfPics; i++) {
        
-        img[i - 1].src = (`${folder}/${folder}${i}.jpg`)
-        /*img[i - 1].width = 400
-        img[i - 1].height = 400*/
-        
-        /*console.log("Originals: " + img[i - 1].naturalHeight + " " + img[i - 1].naturalWidth)
-        console.log("Fake: " + img[i - 1].height + " " + img[i - 1].width)*/
+        img[i - 1].src = (`${folder}${i}.jpg`)
+
         img[i-1].width = img[i-1].naturalWidth/12
         img[i-1].height = img[i-1].naturalHeight/12
         document.body.appendChild(img[i-1])
