@@ -37,21 +37,23 @@ export function initialise(folder, numOfPics) {
             tallImg[tallCount].onload = function () {
                 tallImg[tallCount].width = tallImg[tallCount].naturalWidth / 12
                 tallImg[tallCount].height = tallImg[tallCount].naturalHeight / 12
+                document.body.appendChild(tallImg[tallCount])
+                tallCount++
+                tallImg.push(document.createElement('img'))
             }
 
-            document.body.appendChild(tallImg[tallCount])
-            tallCount++
-            tallImg.push(document.createElement('img'))
+
         } else {
 
             wideImg[wideCount].src = (`${folder}${i}.jpg`)
             wideImg[wideCount].onload = function () {
                 wideImg[wideCount].width = wideImg[wideCount].naturalWidth / 12
                 wideImg[wideCount].height = wideImg[wideCount].naturalHeight / 12
+                document.body.appendChild(wideImg[wideCount])
+                wideCount++
+                wideImg.push(document.createElement('img'))
             }
-            document.body.appendChild(wideImg[wideCount])
-            wideCount++
-            wideImg.push(document.createElement('img'))
+
         }
         /*img[i - 1].src = (`${folder}${i}.jpg`)
 
