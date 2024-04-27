@@ -10,9 +10,10 @@ const menuItems =
         { name: "Design", href: `${root}/Designs/designs.html` },
     ]
 
-const blogPages =
+const otherPages =
     [
-        {name :"blogs"},
+        { name: "blogs" },
+        { name: "pictures" },
     ]
 
 export function initialise(currentPage) {
