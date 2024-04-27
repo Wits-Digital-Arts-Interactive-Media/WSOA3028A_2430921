@@ -29,7 +29,7 @@ export function initialise(folder, numOfPics) {
         img[i-1].height = img[i-1].naturalWidth/4
         document.body.appendChild(img[i-1])
         img.push(document.createElement('img'))
-        ims[i-1].onclick = function (event) {
+        img[i-1].onclick = function (event) {
             window.location.href = this.id + 'Animals/portfolio.html';
         };
     }
