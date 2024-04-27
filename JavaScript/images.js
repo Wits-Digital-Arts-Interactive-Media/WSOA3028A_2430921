@@ -25,13 +25,10 @@ export function initialise(folder, numOfPics) {
         
         /*console.log("Originals: " + img[i - 1].naturalHeight + " " + img[i - 1].naturalWidth)
         console.log("Fake: " + img[i - 1].height + " " + img[i - 1].width)*/
-        img[i-1].width = img[i-1].naturalWidth/4
-        img[i-1].height = img[i-1].naturalHeight/4
+        img[i-1].width = img[i-1].naturalWidth/12
+        img[i-1].height = img[i-1].naturalHeight/12
         document.body.appendChild(img[i-1])
         img.push(document.createElement('img'))
-        img[i-1].onclick = function (event) {
-            window.location.href = this.id + 'Animals/portfolio.html';
-        };
     }
     
 
