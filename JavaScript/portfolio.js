@@ -4,13 +4,13 @@ const root = "/WSOA3028A_2430921/Portfolio"
 
 const portfolioItems =
     [
-        { name: `Animals`},
-        { name: `Architecture` },
-        { name: `Landscapes` },
-        { name: `Moon` },
-        { name: `Nature` },
-        { name: `Portraits` },
-        { name: `Sun` },
+        `Animals`,
+        `Architecture`,
+        `Landscapes`,
+        `Moon`,
+        `Nature`,
+        `Portraits`,
+        `Sun`,
     ]
 
 export function initialise(numOfPics) {
