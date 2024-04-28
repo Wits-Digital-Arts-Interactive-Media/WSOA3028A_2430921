@@ -14,13 +14,13 @@ const root = "/WSOA3028A_2430921/Portfolio"
     ];*/
 const portfolioItems =
     [
-        `Animals/portfolio.html`,
-        `Architecture/portfolio.html` ,
-        `Landscapes/portfolio.html` ,
-        `Moon/portfolio.html` ,
-        `Nature/portfolio.html` ,
-        `Portraits/portfolio.html` ,
-        `Sun/portfolio.html` ,
+        "Animals/portfolio.html",
+        "Architecture/portfolio.html" ,
+        "Landscapes/portfolio.html" ,
+        "Moon/portfolio.html" ,
+        "Nature/portfolio.html" ,
+        "Portraits/portfolio.html" ,
+        "Sun/portfolio.html" ,
     ];
 const portfolioPictures =
     [
