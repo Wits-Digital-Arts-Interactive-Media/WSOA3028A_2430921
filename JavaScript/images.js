@@ -67,7 +67,7 @@ export function initialise(folder, numOfPics) {
         }
 
         for (var j = 0; j < tallCount; j++) {
-            document.body.appendChild(tallimg[j])
+            document.body.appendChild(tallImg[j])
         }
 
         for (var k = 0; k < wideCount; k++) {
