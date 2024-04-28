@@ -34,5 +34,5 @@ export function initialise(currentPage) {
         
     }
     nav.appendChild(ul)
-    nav.appendChild(document.createElement("br"));
+
 }
