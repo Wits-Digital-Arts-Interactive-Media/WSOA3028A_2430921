@@ -2,23 +2,23 @@
 
 const root = "/WSOA3028A_2430921/Portfolio"
 
-const portfolioItems =
-    [
-        "Animals",
-        "Architecture",
-        "Landscapes",
-        "Moon",
-        "Nature",
-        "Portraits",
-        "Sun",
-    ]
+
 
 export function initialise(numOfPics) {
 
     const img = [
         document.createElement('img'),
     ]
-
+    const portfolioItems =
+        [
+            "Animals",
+            "Architecture",
+            "Landscapes",
+            "Moon",
+            "Nature",
+            "Portraits",
+            "Sun",
+        ]
 
     for (var i = 1; i <= numOfPics; i++) {
 
