@@ -4,13 +4,13 @@ const root = "/WSOA3028A_2430921/Portfolio"
 
 const portfolioItems =
     [
-        "Animals",
-        "Architecture",
-        "Landscapes",
-        "Moon",
-        "Nature",
-        "Portraits",
-        "Sun",
+        {name: "Animals", href = "Animals/portfolio.html"},
+        {name: "Architecture"},
+        {name: "Landscapes"},
+        {name: "Moon"},
+        {name: "Nature"},
+        {name: "Portraits"},
+        {name: "Sun"},
     ]
 
 
@@ -23,7 +23,7 @@ export function initialise(numOfPics) {
 
     for (var i = 1; i <= numOfPics; i++) {
 
-        img[i - 1].src = (`Pictures/${portfolioItems[i - 1]}.jpg`)
+        img[i - 1].src = (`Pictures/${portfolioItems[i - 1].name}.jpg`)
             /*img[i - 1].width = img[i - 1].naturalWidth / 8
              = img[i - 1].naturalHeight / 8*/
 
@@ -34,7 +34,7 @@ export function initialise(numOfPics) {
 
         img.push(document.createElement('img'))
         img[i - 1].onclick = function (event) {
-            window.location.href = `${portfolioItems[i-1]}/portfolio.html`;
+            window.location.href = `${portfolioItems[i-1].name}/portfolio.html`;
         };
     }
 
