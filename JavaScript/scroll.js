@@ -10,7 +10,7 @@ export function initialise() {
 
     const button = document.createElement('button')
     button.textContent = 'To Top'
-    document.body.appendChild(newBubuttontton)
+    document.body.appendChild(button)
 
     button.addEventListener('click', ScrollUp);
 }
