@@ -54,12 +54,12 @@ export function initialise(numOfPics) {
                 img[i - 1].width = img[i - 1].width + 50 
                 img[i - 1].height = img[i - 1].height + 50
             };
-            img[i - 1].onclick = function () {
+            img[i - 1].onmouseleave = function () {
                 img[i - 1].width = img[i - 1].width - 50
                 img[i - 1].height = img[i - 1].height - 50
             };
         }
-        queryForm.appendChild(document.createElement("br"));
+        document.body.appendChild(document.createElement("br"));
     }
 
 
