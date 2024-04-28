@@ -4,14 +4,25 @@ const root = "/WSOA3028A_2430921/Portfolio"
 
 const portfolioItems =
     [
-        { name: "Animals", href = "Animals/portfolio.html"},
-        { name: "Architecture", href = "Architecture/portfolio.html"},
-        { name: "Landscapes", href = "Landscapes/portfolio.html" },
-        { name: "Moon", href = "Moon/portfolio.html" },
-        { name: "Nature", href = "Nature/portfolio.html" },
-        { name: "Portraits", href = "Portraits/portfolio.html" },
-        { name: "Sun", href = "Sun/portfolio.html" },
+        { name: "Animals", href: `Animals/portfolio.html`},
+        { name: "Architecture", href: `Architecture/portfolio.html`},
+        { name: "Landscapes", href: `Landscapes/portfolio.html` },
+        { name: "Moon", href: `Moon/portfolio.html` },
+        { name: "Nature", href: `Nature/portfolio.html` },
+        { name: "Portraits", href: `Portraits/portfolio.html` },
+        { name: "Sun", href: `Sun/portfolio.html` },
     ]
+const portfolioPictures =
+    [
+        { name: "Animals", href: `Pictures/Animals.jpg` },
+        { name: "Architecture", href: `Pictures/Architecture.jpg` },
+        { name: "Landscapes", href: `Pictures/Landscapes.jpg` },
+        { name: "Moon", href: `Pictures/Moon.jpg` },
+        { name: "Nature", href: `Pictures/Nature.jpg` },
+        { name: "Portraits", href: `Pictures/Portraits.jpg` },
+        { name: "Sun", href: `Pictures/Sun.jpg` },
+    ]
+
 
 
 export function initialise(numOfPics) {
@@ -26,7 +37,7 @@ export function initialise(numOfPics) {
         for (var j = 0; j < 3; j++) {
 
 
-            img[i - 1].src = (`Pictures/` + img[i - 1].name + `.jpg`)
+            img[i - 1].src = (portfolioPictures[i-1].href)
             /*img[i - 1].width = img[i - 1].naturalWidth / 8
              = img[i - 1].naturalHeight / 8*/
 
