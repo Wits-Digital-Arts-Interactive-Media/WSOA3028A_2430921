@@ -63,13 +63,13 @@ export function initialise(numOfPics) {
         };
 
         img[i - 1].onmouseenter = function (event) {
-                console.log("In")
+                console.log( img[i - 1].width + " " + img[i - 1].height)
                 img[i - 1].width = img[i - 1].width + 50 
                 img[i - 1].height = img[i - 1].height + 50
         };
 
         img[i - 1].onmouseleave = function (event) {
-                console.log("Out")
+                console.log( img[i - 1].width + " " + img[i - 1].height)
                 img[i - 1].width = img[i - 1].width - 50
                 img[i - 1].height = img[i - 1].height - 50
         };
