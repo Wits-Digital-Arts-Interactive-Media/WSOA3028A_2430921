@@ -63,15 +63,15 @@ export function initialise(numOfPics) {
         };
 
         img[i - 1].onmouseenter = function (event) {
-                console.log( this.width + " " + this.height)
-                img[i - 1].width = img[i - 1].width + 50 
-                img[i - 1].height = img[i - 1].height + 50
+                //console.log( this.width + " " + this.height)
+                this.width = this.width + 50 
+                this.height = this.height + 50
         };
 
         img[i - 1].onmouseleave = function (event) {
-                console.log( this.width + " " + this.height)
-                img[i - 1].width = img[i - 1].width - 50
-                img[i - 1].height = img[i - 1].height - 50
+                //console.log( this.width + " " + this.height)
+                this.width = this.width - 50
+                this.height = this.height - 50
         };
 
 

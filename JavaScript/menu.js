@@ -15,6 +15,7 @@ const otherPages =
     [
         { name: "blogs" },
         { name: "pictures" },
+        { name: "essay"}
     ]
 
 export function initialise(currentPage) {
