@@ -4,14 +4,14 @@ const root = "/WSOA3028A_2430921/Portfolio"
 
 const portfolioItems =
     [
-        { name: "Animals", href: `Animals/portfolio.html`},
-        { name: "Architecture", href: `Architecture/portfolio.html`},
+        { name: "Animals", href: `Animals/portfolio.html` },
+        { name: "Architecture", href: `Architecture/portfolio.html` },
         { name: "Landscapes", href: `Landscapes/portfolio.html` },
         { name: "Moon", href: `Moon/portfolio.html` },
         { name: "Nature", href: `Nature/portfolio.html` },
         { name: "Portraits", href: `Portraits/portfolio.html` },
         { name: "Sun", href: `Sun/portfolio.html` },
-    ]
+    ];
 const portfolioPictures =
     [
         { name: "Animals", href: `Pictures/Animals.jpg` },
@@ -21,7 +21,7 @@ const portfolioPictures =
         { name: "Nature", href: `Pictures/Nature.jpg` },
         { name: "Portraits", href: `Pictures/Portraits.jpg` },
         { name: "Sun", href: `Pictures/Sun.jpg` },
-    ]
+    ];
 
 
 
@@ -47,7 +47,7 @@ export function initialise(numOfPics) {
 
             img.push(document.createElement('img'))
             img[i - 1].onclick = function (event) {
-                window.location.href = portfolioItems[i-1].href;
+                window.location.href = (portfolioItems[i-1].href)
             };
             img[i - 1].onmouseenter = function (event) {
                 img[i - 1].width = img[i - 1].width + 50 
