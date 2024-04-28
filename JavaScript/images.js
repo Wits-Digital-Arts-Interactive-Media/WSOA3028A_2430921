@@ -41,11 +41,10 @@ export function initialise(folder, numOfPics) {
                 tallCount++
                 tallImg.push(document.createElement('img'))
             }*/
-            /*tallImg[tallCount].width = tallImg[tallCount].naturalWidth / 12
+            tallImg[tallCount].width = tallImg[tallCount].naturalWidth / 12
             tallImg[tallCount].height = tallImg[tallCount].naturalHeight / 12
-*/
-            tallImg[tallCount].width = tallImg[tallCount].width / 12
-            tallImg[tallCount].height = tallImg[tallCount].height/12
+  
+
             tallCount++
             tallImg.push(document.createElement('img'))
 
@@ -59,10 +58,9 @@ export function initialise(folder, numOfPics) {
                 wideCount++
                 wideImg.push(document.createElement('img'))
             }*/
-            /*wideImg[wideCount].width = wideImg[wideCount].naturalWidth / 12
-            wideImg[wideCount].height = wideImg[wideCount].naturalHeight / 12*/
-            wideImg[wideCount].width = wideImg[wideCount].width / 12
-            wideImg[wideCount].height = wideImg[wideCount].height / 12
+            wideImg[wideCount].width = wideImg[wideCount].naturalWidth / 12
+            wideImg[wideCount].height = wideImg[wideCount].naturalHeight / 12
+
             wideCount++
             wideImg.push(document.createElement('img'))
 
