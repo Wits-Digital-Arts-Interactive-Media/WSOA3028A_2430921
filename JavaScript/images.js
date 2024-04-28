@@ -30,7 +30,7 @@ export function initialise(folder, numOfPics) {
     for (var i = 1; i <= numOfPics; i++) {
 
         const img = document.createElement('img')
-        img.src = (`${folder}${i}.jpg`)
+        img.src = (`${folder} (${i}).jpg`)
         if (img.naturalWidth < img.naturalHeight) {
 
             tallImg[tallCount].src = (`${folder}${i}.jpg`)
@@ -50,7 +50,7 @@ export function initialise(folder, numOfPics) {
 
         } else {
 
-            wideImg[wideCount].src = (`${folder}${i}.jpg`)
+            wideImg[wideCount].src = (`${folder} (${i}).jpg`)
 /*            wideImg[wideCount].onload = function () {
                 wideImg[wideCount].width = wideImg[wideCount].naturalWidth / 12
                 wideImg[wideCount].height = wideImg[wideCount].naturalHeight / 12

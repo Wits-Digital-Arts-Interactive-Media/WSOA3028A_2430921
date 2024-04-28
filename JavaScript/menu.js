@@ -8,6 +8,7 @@ const menuItems =
         { name: "Essays", href: `${root}/Essays/essays.html` },
         { name: "Portfolio", href: `${root}/Portfolio/portfolio.html` },
         { name: "Design", href: `${root}/Designs/designs.html` },
+        { name: "About", href: `${root}/About/about.html` },
     ]
 
 const otherPages =
