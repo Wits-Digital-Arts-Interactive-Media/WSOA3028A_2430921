@@ -33,7 +33,7 @@ export function initialise(folder, numOfPics) {
         img.src = (`${folder} (${i}).jpg`)
         if (img.naturalWidth < img.naturalHeight) {
 
-            tallImg[tallCount].src = (`${folder}${i}.jpg`)
+            tallImg[tallCount].src = (`${folder} (${i}).jpg`)
 /*            tallImg[tallCount].onload = function () {
                 tallImg[tallCount].width = tallImg[tallCount].naturalWidth / 12
                 tallImg[tallCount].height = tallImg[tallCount].naturalHeight / 12

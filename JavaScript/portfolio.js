@@ -44,14 +44,16 @@ export function initialise(numOfPics) {
 
     for (var i = 1; i <= numOfPics; i++) {
 
-
+            
 
             img[i - 1].src = (portfolioPictures[i-1].href)
-            /*img[i - 1].width = img[i - 1].naturalWidth / 8
-             = img[i - 1].naturalHeight / 8*/
+            console.log(img[i - 1].naturalWidth +  img[i - 1].naturalHeight)
+            img[i - 1].width = img[i - 1].naturalWidth / 8
+            img[i - 1].height = img[i - 1].naturalHeight / 8
 
-            img[i - 1].width = 500
-            img[i - 1].height = 500
+
+            /*img[i - 1].width = 500
+            img[i - 1].height = 500*/
             document.body.appendChild(img[i - 1])
 
 
@@ -60,12 +62,14 @@ export function initialise(numOfPics) {
                 window.location.href = portfolioItems[i - 1]
         };
 
-            img[i - 1].onmouseenter = function (event) {
+        img[i - 1].onmouseenter = function (event) {
+                console.log("In")
                 img[i - 1].width = img[i - 1].width + 50 
                 img[i - 1].height = img[i - 1].height + 50
         };
 
-            img[i - 1].onmouseleave = function (event) {
+        img[i - 1].onmouseleave = function (event) {
+                console.log("Out")
                 img[i - 1].width = img[i - 1].width - 50
                 img[i - 1].height = img[i - 1].height - 50
         };
