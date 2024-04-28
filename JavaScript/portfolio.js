@@ -34,7 +34,6 @@ export function initialise(numOfPics) {
 
     for (var i = 1; i <= numOfPics; i++) {
 
-        for (var j = 0; j < 3; j++) {
 
 
             img[i - 1].src = (portfolioPictures[i-1].href)
@@ -58,8 +57,7 @@ export function initialise(numOfPics) {
                 img[i - 1].width = img[i - 1].width - 50
                 img[i - 1].height = img[i - 1].height - 50
             };
-        }
-        document.body.appendChild(document.createElement("br"));
+
     }
 
 
