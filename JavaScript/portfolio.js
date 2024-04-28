@@ -63,6 +63,8 @@ export function initialise(numOfPics) {
                 console.log(portfolioItems[i - 1]);
                 console.log(`${portfolioItems[i - 1]}`);
                 console.log(portfolioItems[0]);
+                console.log(portfolioPictures[i - 1].href);
+                console.log(this.portfolioItems[0])
  
         };
 
