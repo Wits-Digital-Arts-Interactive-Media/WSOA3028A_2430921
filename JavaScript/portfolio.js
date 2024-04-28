@@ -59,7 +59,11 @@ export function initialise(numOfPics) {
 
             img.push(document.createElement('img'))
             img[i - 1].onclick = function (event) {
-                window.location.href = `${ portfolioItems[i - 1] }`;
+                /*window.location.href = `${ portfolioItems[i - 1] }`;*/
+                console.log(portfolioItems[i - 1]);
+                console.log(`${portfolioItems[i - 1]}`);
+                console.log(portfolioItems[0]);
+ 
         };
 
         img[i - 1].onmouseenter = function (event) {
