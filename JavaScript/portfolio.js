@@ -4,8 +4,8 @@ const root = "/WSOA3028A_2430921/Portfolio"
 
 const portfolioItems =
     [
-        {name: "Animals", href = "Animals/portfolio.html"},
-        {name: "Architecture", href = "Architecture/portfolio.html"},
+        { name: "Animals", href = "Animals/portfolio.html"},
+        { name: "Architecture", href = "Architecture/portfolio.html"},
         { name: "Landscapes", href = "Landscapes/portfolio.html" },
         { name: "Moon", href = "Moon/portfolio.html" },
         { name: "Nature", href = "Nature/portfolio.html" },
@@ -26,7 +26,7 @@ export function initialise(numOfPics) {
         for (var j = 0; j < 3; j++) {
 
 
-            img[i - 1].src = (`Pictures/${portfolioItems[i - 1]}.jpg`)
+            img[i - 1].src = (`Pictures/` + img[i - 1].name + `.jpg`)
             /*img[i - 1].width = img[i - 1].naturalWidth / 8
              = img[i - 1].naturalHeight / 8*/
 
