@@ -14,13 +14,13 @@ const root = "/WSOA3028A_2430921/Portfolio"
     ];*/
 const portfolioItems =
     [
-        "Animals/portfolio.html",
-        "Architecture/portfolio.html" ,
-        "Landscapes/portfolio.html" ,
-        "Moon/portfolio.html" ,
-        "Nature/portfolio.html" ,
-        "Portraits/portfolio.html" ,
-        "Sun/portfolio.html" ,
+        { name: "Animals", href: `Animals/portfolio.html` },
+        { name: "Architecture", href: `Architecture/portfolio.html` },
+        { name: "Landscapes", href: `Landscapes/portfolio.html` },
+        { name: "Moon", href: `Moon/portfolio.html` },
+        { name: "Nature", href: `Nature/portfolio.html` },
+        { name: "Portraits", href: `Portraits/portfolio.html` },
+        { name: "Sun", href: `Sun/portfolio.html` },
     ];
 const portfolioPictures =
     [
@@ -60,8 +60,8 @@ export function initialise(numOfPics) {
             img.push(document.createElement('img'))
             img[i - 1].onclick = function (event) {
                 /*window.location.href = `${ portfolioItems[i - 1] }`;*/
-                console.log(portfolioItems[i - 1]);
-                console.log(`${portfolioItems[i - 1]}`);
+                console.log(this.id);
+                console.log();
                 console.log(portfolioItems[0]);
                 console.log(portfolioPictures[i - 1].href);
                 console.log(this.portfolioItems[0])
