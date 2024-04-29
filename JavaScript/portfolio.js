@@ -54,17 +54,15 @@ export function initialise(numOfPics) {
 
             img[i - 1].width = 500
             img[i - 1].height = 500
+            img[i-1].setAttribute("value",i-1)
             document.body.appendChild(img[i - 1])
 
 
             img.push(document.createElement('img'))
-            img[i - 1].onclick = function (event) {
-                /*window.location.href = `${ portfolioItems[i - 1] }`;*/
-                console.log(this.id);
-                console.log();
-                console.log(portfolioItems[0]);
-                console.log(portfolioPictures[i - 1].href);
-                console.log(this.portfolioItems[0])
+            img[i - 1].onclick = function () {
+                window.location.href = portfolioItems[this.getAttribute("value")].href;
+                console.log(this.getAttribute("value"));
+
  
         };
 
