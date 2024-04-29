@@ -52,8 +52,8 @@ export function initialise(numOfPics) {
             img[i - 1].height = img[i - 1].naturalHeight / 8*/
 
 
-            img[i - 1].width = 500
-            img[i - 1].height = 500
+            img[i - 1].width = 350
+            img[i - 1].height = 350
             img[i-1].setAttribute("value",i-1)
             document.body.appendChild(img[i - 1])
 
