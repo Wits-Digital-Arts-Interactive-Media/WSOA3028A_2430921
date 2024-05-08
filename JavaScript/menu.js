@@ -36,5 +36,5 @@ export function initialise(currentPage) {
         
     }
     nav.appendChild(ul)
-    document.createElement("hr/")
+    nav.appendChild(document.createElement("hr/"))
 }

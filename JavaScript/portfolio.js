@@ -37,16 +37,19 @@ const portfolioPictures =
 
 export function initialise(numOfPics) {
 
-    const img = [
+    const canvas = [
         document.createElement('canvas'),
     ]
 
     for (var i = 1; i <= numOfPics; i++) {
-        img[i - 1].src = (portfolioPictures[i - 1].href)
-        img[i - 1].width = 350
-        img[i - 1].height = 350
-        var ctx = img[i - 1].getContext('2d')
-        ctx.fillText(img[i - 1].name,0,0)
+        canvas[i - 1].src = (portfolioPictures[i - 1].href)
+        canvas[i - 1].width = 350
+        canvas[i - 1].height = 350
+        var ctx = canvas[i - 1].getContext('2d')
+        ctx.drawImage(portfolioPictures[i - 1].href, 0, 0)
+        //ctx.font = '50px Times '
+        ctx.fillText(canvas[i - 1].name, 0, 0)
+        document.body.appendChild(canvas[i - 1])
     }
 
     /*
