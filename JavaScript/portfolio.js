@@ -48,15 +48,16 @@ export function initialise(numOfPics) {
         var ctx = canvas[i - 1].getContext("2d")      
         let img = new Image()
         img.src = portfolioPictures[i - 1].href
-        var ratio = img.naturalWidth / img.naturalHeight
-        console.log(ratio)
-        ctx.drawImage(img, 0, 0, 350, 350)
+       
+        ctx.drawImage(img, 0, 0, 350, 350, 0, 0, 350, 350)
         //ctx.font = '50px Times '
         ctx.font = "30px Arial"
         ctx.fillText(canvas[i - 1].name, 0, 0, 350, 350)
 
         document.body.appendChild(canvas[i - 1])
         canvas.push(document.createElement('canvas'))
+        var ratio = img.naturalWidth / img.naturalHeight
+        console.log(ratio)
     }
 
     /*
