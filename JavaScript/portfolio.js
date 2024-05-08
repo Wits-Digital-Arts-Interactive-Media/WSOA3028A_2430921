@@ -45,12 +45,14 @@ export function initialise(numOfPics) {
         //canvas[i - 1].src = (portfolioPictures[i - 1].href)
         canvas[i - 1].width = 350
         canvas[i - 1].height = 350
-        var ctx = canvas[i - 1].getContext('2d')
+        var ctx = canvas[i - 1].getContext("2d")
         let img = new Image()
+        img.src = portfolioPictures[i - 1].href
         ctx.drawImage(img, 0, 0)
         //ctx.font = '50px Times '
+        ctx.font = "30px Arial"
         ctx.fillText(canvas[i - 1].name, 0, 0)
-        img.src = portfolioPictures[i - 1].href
+
         document.body.appendChild(canvas[i - 1])
         canvas.push(document.createElement('canvas'))
     }
