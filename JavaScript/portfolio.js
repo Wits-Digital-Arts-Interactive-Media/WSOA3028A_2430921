@@ -52,6 +52,7 @@ export function initialise(numOfPics) {
         ctx.fillText(canvas[i - 1].name, 0, 0)
         img.src = portfolioPictures[i - 1].href
         document.body.appendChild(canvas[i - 1])
+        img.push(document.createElement('canvas'))
     }
 
     /*
