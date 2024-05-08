@@ -38,6 +38,19 @@ const portfolioPictures =
 export function initialise(numOfPics) {
 
     const img = [
+        document.createElement('canvas'),
+    ]
+
+    for (var i = 1; i <= numOfPics; i++) {
+        img[i - 1].src = (portfolioPictures[i - 1].href)
+        img[i - 1].width = 350
+        img[i - 1].height = 350
+        var ctx = img[i - 1].getContext('2d')
+        ctx.fillText(img[i - 1].name,0,0)
+    }
+
+    /*
+    const img = [
         document.createElement('img'),
     ]
 
@@ -49,7 +62,7 @@ export function initialise(numOfPics) {
             img[i - 1].src = (portfolioPictures[i-1].href)
 
             /*img[i - 1].width = img[i - 1].naturalWidth / 8
-            img[i - 1].height = img[i - 1].naturalHeight / 8*/
+            img[i - 1].height = img[i - 1].naturalHeight / 8
 
 
             img[i - 1].width = 350
@@ -81,6 +94,6 @@ export function initialise(numOfPics) {
 
     }
 
-
+*/
 
 }

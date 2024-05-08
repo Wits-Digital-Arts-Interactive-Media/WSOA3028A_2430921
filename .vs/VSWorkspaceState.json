@@ -1,16 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\JavaScript",
-    "\\Portfolio",
-    "\\Portfolio\\Animals",
-    "\\Portfolio\\Architecture",
-    "\\Portfolio\\Landscapes",
-    "\\Portfolio\\Moon",
-    "\\Portfolio\\Nature",
-    "\\Portfolio\\Portraits",
-    "\\Portfolio\\Sun"
+    "\\About",
+    "\\Designs"
   ],
-  "SelectedNode": "\\Portfolio\\Sun\\portfolio.html",
+  "SelectedNode": "\\Designs\\designs.html",
   "PreviewInSolutionExplorer": false
 }
