@@ -42,7 +42,7 @@ export function initialise(numOfPics) {
     ]
 
     for (var i = 1; i <= numOfPics; i++) {
-        canvas[i - 1].src = (portfolioPictures[i - 1].href)
+        //canvas[i - 1].src = (portfolioPictures[i - 1].href)
         canvas[i - 1].width = 350
         canvas[i - 1].height = 350
         var ctx = canvas[i - 1].getContext('2d')
