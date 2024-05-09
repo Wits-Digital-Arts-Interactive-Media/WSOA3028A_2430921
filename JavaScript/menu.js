@@ -31,7 +31,8 @@ export function initialise(currentPage) {
             a.innerText = menuItem.name
             a.setAttribute("href", menuItem.href)
             //li.appendChild(a)
-            n.appendChild(a)
+            //n.appendChild(a)
+            p.appendChild(a)
             n += "&emsp";
         } else (n += menuItem.name)
         nav.appendChild(p)
