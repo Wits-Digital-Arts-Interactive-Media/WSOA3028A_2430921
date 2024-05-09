@@ -20,6 +20,28 @@ const otherPages =
 
 export function initialise(currentPage) {
     const nav = document.querySelector("header > nav")
+    
+
+    for (let menuItem of menuItems) {
+        const p = document.createTextNode("")
+        if (currentPage != menuItem.name) {
+            const a = document.createElement("a")
+            a.innerText = menuItem.name
+            a.setAttribute("href", menuItem.href)
+            //li.appendChild(a)
+            p.appendChild(a)
+        } else (p += menuItem.name)
+        nav.appendChild(p)
+
+
+    }
+    //nav.appendChild(ul)
+    nav.appendChild(document.createElement("hr"))
+}
+
+/*
+export function initialise(currentPage) {
+    const nav = document.querySelector("header > nav")
     const ul = document.createElement("ul")
 
     for (let menuItem of menuItems) {
@@ -38,3 +60,4 @@ export function initialise(currentPage) {
     nav.appendChild(ul)
     nav.appendChild(document.createElement("hr"))
 }
+*/
