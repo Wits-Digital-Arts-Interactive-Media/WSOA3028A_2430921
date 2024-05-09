@@ -25,7 +25,7 @@ export function initialise(currentPage) {
     for (let menuItem of menuItems) {
         
         //var n = document.createTextNode("")
-        p.appendChild(n)
+        //p.appendChild(n)
         if (currentPage != menuItem.name) {
             const a = document.createElement("a")
             a.innerText = menuItem.name
