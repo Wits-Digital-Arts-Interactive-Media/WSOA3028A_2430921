@@ -23,14 +23,17 @@ export function initialise(currentPage) {
     
 
     for (let menuItem of menuItems) {
-        const p = document.createTextNode("")
+        const p = document.createElement("p")
+        const n = document.createTextNode("")
+        p.appendChild(n)
         if (currentPage != menuItem.name) {
             const a = document.createElement("a")
             a.innerText = menuItem.name
             a.setAttribute("href", menuItem.href)
             //li.appendChild(a)
-            p.appendChild(a)
-        } else (p += menuItem.name)
+            n.appendChild(a)
+            n += "&emsp";
+        } else (n += menuItem.name)
         nav.appendChild(p)
 
 
