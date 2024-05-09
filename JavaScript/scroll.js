@@ -7,7 +7,7 @@ function ScrollUp() {
 export function initialise() {
 
 
-
+    document.body.appendChild(document.createElement('br'))
     const button = document.createElement('button')
     button.textContent = 'To Top'
     document.body.appendChild(button)
