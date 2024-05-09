@@ -33,11 +33,11 @@ export function initialise(currentPage) {
             //li.appendChild(a)
             //n.appendChild(a)
             p.appendChild(a)
-            const n = document.createTextNode(" &emsp; ")
+            const n = document.createTextNode("     ")
             p.appendChild(n)
         } else 
         {
-            const n = document.createTextNode(menuItem.name + " &emsp; ")
+            const n = document.createTextNode(menuItem.name + "     ")
             p.appendChild(n)
         }
         
