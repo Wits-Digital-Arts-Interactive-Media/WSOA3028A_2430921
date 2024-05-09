@@ -88,7 +88,8 @@ export function initialise(numOfPics) {
 
         img.push(document.createElement('img'))
         img[i - 1].onclick = function () {
-        window.location.href = portfolioItems[this.getAttribute("value")].href;
+            window.location.href = portfolioItems[this.getAttribute("value")].href;
+        }
         //console.log(this.getAttribute("value"));
 
     }
