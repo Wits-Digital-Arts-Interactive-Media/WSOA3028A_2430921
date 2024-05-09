@@ -23,8 +23,8 @@ export function initialise(currentPage) {
     
 
     for (let menuItem of menuItems) {
-        const p = document.createElement("p")
-        const n = document.createTextNode("")
+        var p = document.createElement("p")
+        var n = document.createTextNode("")
         p.appendChild(n)
         if (currentPage != menuItem.name) {
             const a = document.createElement("a")
