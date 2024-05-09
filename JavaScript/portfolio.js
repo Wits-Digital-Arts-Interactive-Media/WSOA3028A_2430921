@@ -36,64 +36,8 @@ const portfolioPictures =
 
 
 export function initialise(numOfPics) {
-    /*
-    const canvas = [
-        document.createElement('canvas'),
-    ]
-
-    for (var i = 1; i <= numOfPics; i++) {
-        //canvas[i - 1].src = (portfolioPictures[i - 1].href)
-        canvas[i - 1].width = 350
-        canvas[i - 1].height = 350
-        var ctx = canvas[i - 1].getContext("2d")      
-        let img = new Image()
-        img.src = portfolioPictures[i - 1].href
-       
-        ctx.drawImage(img, 0, 0, 350, 350, 0, 0, 350, 350)
-        //ctx.font = '50px Times '
-        ctx.font = "30px Arial"
-        ctx.fillText(canvas[i - 1].name, 0, 0, 350, 350)
-
-        document.body.appendChild(canvas[i - 1])
-        canvas.push(document.createElement('canvas'))
-        var ratio = img.naturalWidth / img.naturalHeight
-        console.log(ratio)
-    }
-
-    */
-    const img = [
-        document.createElement('img'),
-    ]
-
-    for (var i = 1; i <= numOfPics; i++) {
-        const canvas = document.createElement('canvas')
-        var ctx = canvas.getContext("2d")
-        //ctx.font = 
-        canvas.width = 350
-        canvas.height = 350
-        img.appendChild(canvas)
-
-        img[i - 1].src = (portfolioPictures[i - 1].href)
-
-        ctx.fillText(img[i - 1].name, 50,50)
-
-        
-
-
-        img[i - 1].width = 350
-        img[i - 1].height = 350
-        img[i-1].setAttribute("value",i-1)
-        document.body.appendChild(img[i - 1])
-
-
-        img.push(document.createElement('img'))
-        img[i - 1].onclick = function () {
-            window.location.href = portfolioItems[this.getAttribute("value")].href;
-        }
-        //console.log(this.getAttribute("value"));
-
-    }
-    /*
+ 
+    
     const img = [
         document.createElement('img'),
     ]
@@ -107,7 +51,7 @@ export function initialise(numOfPics) {
 
             /*img[i - 1].width = img[i - 1].naturalWidth / 8
             img[i - 1].height = img[i - 1].naturalHeight / 8
-
+            */
 
             img[i - 1].width = 350
             img[i - 1].height = 350
@@ -138,6 +82,6 @@ export function initialise(numOfPics) {
 
     }
 
-*/
+
 
 }
