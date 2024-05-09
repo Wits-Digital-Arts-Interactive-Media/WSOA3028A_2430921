@@ -21,10 +21,10 @@ const otherPages =
 export function initialise(currentPage) {
     const nav = document.querySelector("header > nav")
     
-
+    var p = document.createElement("p")
     for (let menuItem of menuItems) {
-        var p = document.createElement("p")
-        var n = document.createTextNode("")
+        
+        //var n = document.createTextNode("")
         p.appendChild(n)
         if (currentPage != menuItem.name) {
             const a = document.createElement("a")
@@ -33,13 +33,19 @@ export function initialise(currentPage) {
             //li.appendChild(a)
             //n.appendChild(a)
             p.appendChild(a)
-            n += "&emsp";
-        } else (n += menuItem.name)
-        nav.appendChild(p)
+            const n = document.createTextNode("&emsp")
+            p.appendChild(n)
+        } else 
+        {
+            const n = document.createTextNode(menuItem.name + "&emsp")
+            p.appendChild(n)
+        }
+        
 
 
     }
     //nav.appendChild(ul)
+    nav.appendChild(p)
     nav.appendChild(document.createElement("hr"))
 }
 
