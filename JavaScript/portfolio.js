@@ -36,7 +36,7 @@ const portfolioPictures =
 
 
 export function initialise(numOfPics) {
-
+    /*
     const canvas = [
         document.createElement('canvas'),
     ]
@@ -60,6 +60,38 @@ export function initialise(numOfPics) {
         console.log(ratio)
     }
 
+    */
+    const img = [
+        document.createElement('img'),
+    ]
+
+    for (var i = 1; i <= numOfPics; i++) {
+        const canvas = document.createElement('canvas')
+        var ctx = canvas.getContext("2d")
+        //ctx.font = 
+        canvas.width = 350
+        canvas.height = 350
+        img.appendChild(canvas)
+
+        img[i - 1].src = (portfolioPictures[i - 1].href)
+
+        ctx.fillText(img[i - 1].name, 50,50)
+
+        
+
+
+        img[i - 1].width = 350
+        img[i - 1].height = 350
+        img[i-1].setAttribute("value",i-1)
+        document.body.appendChild(img[i - 1])
+
+
+        img.push(document.createElement('img'))
+        img[i - 1].onclick = function () {
+        window.location.href = portfolioItems[this.getAttribute("value")].href;
+        //console.log(this.getAttribute("value"));
+
+    }
     /*
     const img = [
         document.createElement('img'),
