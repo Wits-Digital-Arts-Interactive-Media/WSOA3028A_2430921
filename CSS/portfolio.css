@@ -1,14 +1,15 @@
 ﻿.container {
-    max-width: 500px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width: 450px;
     display: inline-block;
     position: relative;
 }
 
 img.link {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+
     transition: transform .1s;
     width: 100%;
     height: auto;
@@ -23,7 +24,8 @@ img.link:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color : white;
+    color: white;
+    display: none;
 }
 
 img.display {

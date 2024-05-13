@@ -3,6 +3,13 @@
     src: url(fonts/silent_lips.ttf)
 }
 
+a {
+    text-decoration: underline;
+    color: darkgoldenrod;
+    font-family: Krylon;
+    font-size: 20px;
+}
+
 .menu {
     text-decoration: line-through;
     color: darkgoldenrod;
@@ -14,23 +21,17 @@ body {
     background-color: black;
 }
 
-/** {
+* {
     text-align: center;
 }
-*/
+
 h1 {
     color: white;
     font-family: silentLips;
     text-decoration: underline;
 }
 
-a {
-    text-decoration: underline;
-    color: darkgoldenrod;
-    font-family: Krylon;
-    font-size: 20px;
-    
-}
+
 
 h2, h3, h4, h5, h6 {
     color: white;
