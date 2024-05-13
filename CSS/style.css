@@ -1,0 +1,24 @@
+﻿@font-face {
+    font-family: silentLips;
+    src: url(fonts/silent_lips.ttf)
+}
+
+body {
+    background-color: black;
+}
+
+* {
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    font-family: silentLips;
+}
+
+h2,h3,h4,h5,h6,p {
+    color: white;
+    font-family: Krylon;
+}
+
+
