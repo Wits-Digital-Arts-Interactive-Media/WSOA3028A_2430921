@@ -21,7 +21,7 @@ img.link:hover {
     top: 50%;
     bottom: 50%;
     transform: translate(-50%, -50%);
-    display: none;
+    color : white;
 }
 
 img.display {

@@ -42,12 +42,13 @@ export function initialise(numOfPics) {
     for (var i = 1; i <= numOfPics; i++) {
 
                 
-        var container = document.createElement('div')
-        container.classList.add('container')
+        //var container = document.createElement('div')
+        //container.classList.add('container')
         img[i - 1].src = (portfolioPictures[i - 1].href);
         img[i - 1].name = (portfolioPictures[i - 1].name);
         div[i - 1].textContent = portfolioPictures[i - 1].name;
         div[i - 1].id = portfolioPictures[i - 1].name; 
+        div[i - 1].hidden = true;
             /*img[i - 1].width = img[i - 1].naturalWidth / 8
             img[i - 1].height = img[i - 1].naturalHeight / 8
             */
@@ -56,9 +57,10 @@ export function initialise(numOfPics) {
         img[i - 1].setAttribute("value", i - 1);
         img[i - 1].classList.add('link');
         div[i - 1].classList.add('label')
-        container.appendChild(img[i - 1]);
-        container.appendChild(div[i - 1]);
-        document.body.appendChild(container);
+        /*container.appendChild(img[i - 1]);
+        container.appendChild(div[i - 1]);*/
+        img[i - 1].appendChild(div[i - 1]);
+        document.body.appendChild(img[i - 1]);
         
 
 
@@ -73,14 +75,14 @@ export function initialise(numOfPics) {
 
         img[i - 1].onmouseenter = function (event) {
             //console.log( this.width + " " + this.height)
-            var text = document.getElementsByName(this.name)
-            text.style.display = 'inline';
+            var text = document.getElementsByName(this.name).hidden = false;
+            
         };
 
         img[i - 1].onmouseleave = function (event) {
             //console.log( this.width + " " + this.height)
-            var text = document.getElementsByName(this.name)
-            text.style.display = 'none';
+            var text = document.getElementsByName(this.name).hidden = true;
+            
         };
 
 
