@@ -3,19 +3,19 @@
     src: url(fonts/silent_lips.ttf)
 }
 
-a {
-    
-    color: darkgoldenrod;
-    font-family: Krylon;
-    font-size: 20px;
-}
-
-.menu {    
+.menu {
     background: rgba(0, 0, 0, 0.8);
     color: darkgoldenrod;
     font-family: silentLips;
     font-size: 20px;
     width: 100%;
+}
+
+a {
+    
+    color: darkgoldenrod;
+    font-family: Krylon;
+    font-size: 20px;
 }
 
 body {
