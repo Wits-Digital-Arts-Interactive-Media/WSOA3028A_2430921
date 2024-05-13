@@ -29,6 +29,7 @@ export function initialise(currentPage) {
         //p.appendChild(n)
         if (currentPage != menuItem.name) {
             const a = document.createElement("a")
+            a.classList.add('menu')
             a.innerText = menuItem.name
             a.setAttribute("href", menuItem.href)
             //li.appendChild(a)

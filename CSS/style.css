@@ -5,7 +5,7 @@
 
 
 
-a {
+a.url {
     padding-left: 10px;
     padding-right: 10px;
     color: darkgoldenrod;
@@ -13,10 +13,10 @@ a {
     font-size: 20px;
 }
 
-.menu {
+.menu a.menu{
     padding-left: 5px;
     padding-right: 5px;
-    background: rgba(0, 0, 0, 0.8);
+    
     color: darkgoldenrod;
     font-family: silentLips;
     font-size: 20px;
