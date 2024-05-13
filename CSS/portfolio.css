@@ -1,13 +1,22 @@
 ﻿img.link {
     padding-left: 10px;
     padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: transform .2s;
     width: 30%;
     height: auto;
+}
+
+img.link:hover {
+    transform: scale(1.5);
 }
 
 img.display {
     padding-left: 5px;
     padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     width: 15%;
     height: auto;
 }
