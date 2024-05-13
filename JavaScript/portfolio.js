@@ -2,6 +2,7 @@
 
 const root = "/WSOA3028A_2430921/Portfolio"
 
+var count = 0;
 
 const portfolioItems =
     [
@@ -87,10 +88,18 @@ export function initialise(numOfPics) {
             
         };
 
+        
+
 
 
     }
 
 
+    setInterval(updateImages(numOfPics), 5000);
+}
 
+function updateImages(numOfPics) {
+    for (var i = 1; i <= numOfPics; i++) {
+        console.log(portfolioPictures[i - 1].href + `.jpg`);
+    }
 }
