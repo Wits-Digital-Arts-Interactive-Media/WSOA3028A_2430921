@@ -75,14 +75,15 @@ export function initialise(numOfPics) {
 
         img[i - 1].onmouseenter = function (event) {
             //console.log( this.width + " " + this.height)
-            var text = document.getElementsByName(this.name).hidden = false;
+            var text = document.getElementsByName(this.name);
+            text.hidden = false;
             
         };
 
         img[i - 1].onmouseleave = function (event) {
             //console.log( this.width + " " + this.height)
-            var text = document.getElementsByName(this.name).hidden = true;
-            
+            var text = document.getElementsByName(this.name);
+            text.hidden = true;
         };
 
 

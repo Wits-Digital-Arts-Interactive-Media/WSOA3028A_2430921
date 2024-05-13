@@ -10,7 +10,7 @@ img.link {
     padding-top: 10px;
     padding-bottom: 10px;
     transition: transform .1s;
-    width: 30%;
+    width: 100%;
     height: auto;
 }
 
