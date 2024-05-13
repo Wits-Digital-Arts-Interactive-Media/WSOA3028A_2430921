@@ -34,6 +34,7 @@ export function initialise(folder, numOfPics) {
         if (img.naturalWidth < img.naturalHeight) {
 
             tallImg[tallCount].src = (`${folder} (${i}).jpg`)
+            tallImg[tallCount].classList.add('display')
 /*            tallImg[tallCount].onload = function () {
                 tallImg[tallCount].width = tallImg[tallCount].naturalWidth / 12
                 tallImg[tallCount].height = tallImg[tallCount].naturalHeight / 12
@@ -49,6 +50,7 @@ export function initialise(folder, numOfPics) {
         } else {
 
             wideImg[wideCount].src = (`${folder} (${i}).jpg`)
+            wideImg[wideCount].classList.add('display')
 /*            wideImg[wideCount].onload = function () {
                 wideImg[wideCount].width = wideImg[wideCount].naturalWidth / 12
                 wideImg[wideCount].height = wideImg[wideCount].naturalHeight / 12

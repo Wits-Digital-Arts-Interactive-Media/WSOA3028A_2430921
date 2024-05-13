@@ -55,6 +55,7 @@ export function initialise(numOfPics) {
 
             
             img[i-1].setAttribute("value",i-1)
+            img[i - 1].classList.add('link')
             document.body.appendChild(img[i - 1])
 
 
