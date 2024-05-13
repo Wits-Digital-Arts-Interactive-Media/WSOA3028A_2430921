@@ -48,11 +48,13 @@ p, ul, li {
 }
 
 .video {
+    object-fit: contain;
     position: fixed;
-    top: 50%;
-    left: 50%;
+    top: 0;
+    left: 0;
     min-width: 50%;
     min-height: 50%;
+    z-index: -1;
 }
 
 
