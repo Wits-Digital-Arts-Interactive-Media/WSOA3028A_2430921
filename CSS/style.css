@@ -4,17 +4,20 @@
 }
 
 a {
-    text-decoration: underline;
+    
     color: darkgoldenrod;
     font-family: Krylon;
     font-size: 20px;
 }
 
 .menu {
-    text-decoration: line-through;
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.8);
     color: darkgoldenrod;
-    font-family: Krylon;
+    font-family: silentLips;
     font-size: 20px;
+    width: 100%;
 }
 
 body {

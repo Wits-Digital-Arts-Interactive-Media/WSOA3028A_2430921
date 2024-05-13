@@ -48,7 +48,7 @@ export function initialise(numOfPics) {
         img[i - 1].name = (portfolioPictures[i - 1].name);
         div[i - 1].textContent = portfolioPictures[i - 1].name;
         div[i - 1].id = portfolioPictures[i - 1].name; 
-        div[i - 1].hidden = true;
+        
             /*img[i - 1].width = img[i - 1].naturalWidth / 8
             img[i - 1].height = img[i - 1].naturalHeight / 8
             */
@@ -84,6 +84,7 @@ export function initialise(numOfPics) {
             //console.log( this.width + " " + this.height)
             var text = document.getElementsByName(this.name);
             text.style.display = 'none';
+            
         };
 
 

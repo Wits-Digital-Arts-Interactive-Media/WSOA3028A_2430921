@@ -21,8 +21,8 @@ const otherPages =
 export function initialise(currentPage) {
     const nav = document.querySelector("header > nav")
     
-    var p = document.createElement("p");
-    p.classList.add('menu');
+    var div = document.createElement("div");
+    div.classList.add('menu');
     for (let menuItem of menuItems) {
         
         //var n = document.createTextNode("")
@@ -33,20 +33,20 @@ export function initialise(currentPage) {
             a.setAttribute("href", menuItem.href)
             //li.appendChild(a)
             //n.appendChild(a)
-            p.appendChild(a)
+            div.appendChild(a)
             const n = document.createTextNode("     ")
-            p.appendChild(n)
+            div.appendChild(n)
         } else 
         {
             const n = document.createTextNode(menuItem.name + "     ")
-            p.appendChild(n)
+            div.appendChild(n)
         }
         
 
 
     }
     //nav.appendChild(ul)
-    nav.appendChild(p)
+    nav.appendChild(div)
     nav.appendChild(document.createElement("hr"))
 }
 
