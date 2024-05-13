@@ -69,7 +69,7 @@ export function initialise(numOfPics) {
         div.push(document.createElement('div'));
         img[i - 1].onclick = function () {
             window.location.href = portfolioItems[this.getAttribute("value")].href;
-            console.log(this.getAttribute("value"));
+            
 
  
         };
@@ -84,7 +84,7 @@ export function initialise(numOfPics) {
         img[i - 1].onmouseleave = function (event) {
             //console.log( this.width + " " + this.height)
             var text = document.getElementById(this.name);
-            text.style.display = 'hidden';
+            text.style.visibility = 'hidden';
             
         };
 
