@@ -3,6 +3,16 @@
     src: url(fonts/silent_lips.ttf)
 }
 
+
+
+a {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: darkgoldenrod;
+    font-family: Krylon;
+    font-size: 20px;
+}
+
 .menu {
     padding-left: 5px;
     padding-right: 5px;
@@ -11,14 +21,6 @@
     font-family: silentLips;
     font-size: 20px;
     width: 100%;
-}
-
-a {
-    padding-left: 10px;
-    padding-right: 10px;
-    color: darkgoldenrod;
-    font-family: Krylon;
-    font-size: 20px;
 }
 
 body {
