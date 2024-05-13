@@ -4,6 +4,8 @@
 }
 
 .menu {
+    padding-left: 5px;
+    padding-right: 5px;
     background: rgba(0, 0, 0, 0.8);
     color: darkgoldenrod;
     font-family: silentLips;
@@ -12,7 +14,8 @@
 }
 
 a {
-    
+    padding-left: 10px;
+    padding-right: 10px;
     color: darkgoldenrod;
     font-family: Krylon;
     font-size: 20px;
