@@ -42,8 +42,8 @@ export function initialise(numOfPics) {
     for (var i = 1; i <= numOfPics; i++) {
 
                 
-        //var container = document.createElement('div')
-        //container.classList.add('container')
+        var container = document.createElement('div')
+        container.classList.add('container')
         img[i - 1].src = (portfolioPictures[i - 1].href);
         img[i - 1].name = (portfolioPictures[i - 1].name);
         div[i - 1].textContent = portfolioPictures[i - 1].name;
