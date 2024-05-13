@@ -1,15 +1,27 @@
-﻿img.link {
+﻿.container {
+    position: relative;
+}
+
+img.link {
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-    transition: transform .2s;
+    transition: transform .1s;
     width: 30%;
     height: auto;
 }
 
 img.link:hover {
-    transform: scale(1.5);
+    transform: scale(1.1);
+}
+
+.label {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
 }
 
 img.display {
