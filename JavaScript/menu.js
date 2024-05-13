@@ -21,7 +21,8 @@ const otherPages =
 export function initialise(currentPage) {
     const nav = document.querySelector("header > nav")
     
-    var p = document.createElement("p")
+    var p = document.createElement("p");
+    p.classList.add('menu');
     for (let menuItem of menuItems) {
         
         //var n = document.createTextNode("")
