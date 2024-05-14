@@ -79,12 +79,14 @@ export function initialise(numOfPics) {
         container.onmouseenter = function () {
             var text = document.getElementById(this.name);
             text.style.visibility = 'visible'
+            text.classList.add('textHover');
             this.classList.add('hover');
         };
 
         container.onmouseleave = function () {
             var text = document.getElementById(this.name);
             text.style.visibility = 'hidden';
+            text.classList.remove('textHover');
             this.classList.remove('hover');
         };
         /*img[i - 1].onmouseenter = function (event) {
