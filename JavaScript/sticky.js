@@ -5,10 +5,10 @@ export function initialise() {
 
 function stickyScroll() {
     var header = document.getElementById('menu');
-    var offSet = header.offSetTop;
+    var offSet = header.offsetTop;
     console.log(offSet);
 
-    if (window.pageYOffset > 10) {
+    if (window.scrollY > 0) {
         console.log("scroll");
         header.classList.add("sticky");
     } else {
