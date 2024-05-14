@@ -1,10 +1,8 @@
-export function initialise() {
-    //document.addEventListener("scroll", stickyScroll());
-    window.addEventListener("scroll", stickyScroll());
-}
 
-function stickyScroll() {
+
     var header = document.getElementById('menu');
+    window.addEventListener("scroll", function() {
+    
     var offSet = header.offsetTop;
     //console.log(offSet);
     console.log('Y:' + scrollY);
@@ -18,4 +16,4 @@ function stickyScroll() {
         console.log("stop");
         header.classList.remove("sticky");
     }
-}
+})
