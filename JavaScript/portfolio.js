@@ -91,7 +91,7 @@ export function initialise(numOfPics) {
             var text = document.getElementById(this.name);
             text.style.visibility = 'visible'
             //this.classList.add('hover');
-            text.classList.add('hover');
+            this.parentElement.classList.add('hover');
         };
 
         img[i - 1].onmouseleave = function (event) {
@@ -99,7 +99,7 @@ export function initialise(numOfPics) {
             var text = document.getElementById(this.name);
             text.style.visibility = 'hidden';
             //this.classList.remove('hover');
-            text.classList.remove('hover');
+            this.parentElement.classList.remove('hover');
         };
 
         
