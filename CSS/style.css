@@ -25,11 +25,20 @@ a.url {
 
 body {
     background-color: black;
+
 }
+
+
 
 * {
     text-align: center;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
+
+*::-webkit-scrollbar {
+    display: none;
+} 
 
 h1 {
     color: white;
@@ -51,10 +60,10 @@ p, ul, li {
 }
 
 .video {
-    padding-top: 160px;
+    padding-top: 120px;
     display: block;
     margin: auto;
-    object-fit: contain;
+    object-fit: cover;
     position: fixed;
     top: 0;
     left: 0;
