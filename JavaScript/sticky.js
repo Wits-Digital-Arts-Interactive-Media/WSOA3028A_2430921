@@ -9,8 +9,10 @@ function stickyScroll() {
     console.log(offSet);
 
     if (window.screenY > 50) {
+        console.log("scroll");
         header.classList.add("sticky");
     } else {
+        console.log("stop");
         header.classList.remove("sticky");
     }
 }
