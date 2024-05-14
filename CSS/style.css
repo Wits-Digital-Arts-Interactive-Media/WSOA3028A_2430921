@@ -23,6 +23,17 @@ a.url {
     width: 100%;
 }
 
+.menu {
+    background-color: black;
+    z-index: 3;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.sticky {
+    background-color: dimgray;
+    position: fixed;
+}
+
 body {
     background-color: black;
 
