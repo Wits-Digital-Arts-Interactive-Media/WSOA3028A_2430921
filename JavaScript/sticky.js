@@ -1,6 +1,6 @@
 
 
-var header = document.getElementById("menu");
+var header = document.querySelector(".menu");
 
 window.addEventListener("scroll", function () {
     
