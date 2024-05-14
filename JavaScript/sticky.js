@@ -3,7 +3,7 @@
     var header = document.getElementById('menu');
     window.addEventListener("scroll", function() {
     
-    var offSet = header.offsetTop;
+    
     //console.log(offSet);
     console.log('Y:' + scrollY);
     console.log('Top:' + document.documentElement.scrollTop)
