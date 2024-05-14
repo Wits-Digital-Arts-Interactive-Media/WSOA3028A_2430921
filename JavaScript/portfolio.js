@@ -46,7 +46,7 @@ export function initialise(numOfPics) {
         var container = document.createElement('div')
         container.classList.add('container')
         img[i - 1].src = (portfolioPictures[i - 1].href);
-        div[i - 1].name = (portfolioPictures[i - 1].name);
+        img[i - 1].name = (portfolioPictures[i - 1].name);
         div[i - 1].textContent = portfolioPictures[i - 1].name;
         div[i - 1].id = portfolioPictures[i - 1].name; 
         
@@ -75,7 +75,7 @@ export function initialise(numOfPics) {
         };
 
 
-        div[i - 1].onmouseenter = function () {
+        /*div[i - 1].onmouseenter = function () {
             var text = document.getElementById(this.name);
             text.style.visibility = 'visible'
             this.classList.add('hover');
@@ -85,20 +85,20 @@ export function initialise(numOfPics) {
             var text = document.getElementById(this.name);
             text.style.visibility = 'hidden';
             this.classList.remove('hover');
-        }
-        /*img[i - 1].onmouseenter = function (event) {
+        }*/
+        img[i - 1].onmouseenter = function (event) {
             //console.log( this.width + " " + this.height)
             var text = document.getElementById(this.name);
             text.style.visibility = 'visible'
-            this.
+            this.classList.add('hover');
         };
 
         img[i - 1].onmouseleave = function (event) {
             //console.log( this.width + " " + this.height)
             var text = document.getElementById(this.name);
             text.style.visibility = 'hidden';
-            
-        };*/
+            this.classList.remove('hover');
+        };
 
         
 
