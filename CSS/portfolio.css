@@ -15,8 +15,9 @@ img.link {
     height: auto;
 }
 
-img.link:hover {
+.hover {
     transform: scale(1.1);
+    background-color: black;
 }
 
 .label {
