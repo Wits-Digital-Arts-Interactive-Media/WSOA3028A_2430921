@@ -8,7 +8,7 @@ function stickyScroll() {
     var offSet = header.offSetTop;
     console.log(offSet);
 
-    if (window.screenY > 50) {
+    if (window.pageYOffset > 10) {
         console.log("scroll");
         header.classList.add("sticky");
     } else {
