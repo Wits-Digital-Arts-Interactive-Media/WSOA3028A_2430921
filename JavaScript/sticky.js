@@ -1,7 +1,7 @@
 
 
-    //var header = document.getElementById('menu');
-var header = document.querySelector('nav');
+var header = document.getElementById("menu");
+
 window.addEventListener("scroll", function () {
     
     
