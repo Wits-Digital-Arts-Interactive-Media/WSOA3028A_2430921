@@ -90,14 +90,16 @@ export function initialise(numOfPics) {
             //console.log( this.width + " " + this.height)
             var text = document.getElementById(this.name);
             text.style.visibility = 'visible'
-            this.classList.add('hover');
+            //this.classList.add('hover');
+            text.classList.add('hover');
         };
 
         img[i - 1].onmouseleave = function (event) {
             //console.log( this.width + " " + this.height)
             var text = document.getElementById(this.name);
             text.style.visibility = 'hidden';
-            this.classList.remove('hover');
+            //this.classList.remove('hover');
+            text.classList.remove('hover');
         };
 
         
