@@ -23,6 +23,7 @@ export function initialise(currentPage) {
     
     var div = document.createElement("div");
     div.classList.add('menu');
+    div.id = 'menu';
     for (let menuItem of menuItems) {
         
         //var n = document.createTextNode("")

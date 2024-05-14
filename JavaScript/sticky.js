@@ -1,9 +1,10 @@
 export function initialise() {
-    document.addEventListener("scroll",stickyScroll());
+    //document.addEventListener("scroll", stickyScroll());
+    window.onscroll = stickyScroll();
 }
 
 function stickyScroll() {
-    var header = document.querySelector(".menu");
+    var header = document.getElementById('menu');
     var offSet = header.offSetTop;
     console.log(offSet);
 
