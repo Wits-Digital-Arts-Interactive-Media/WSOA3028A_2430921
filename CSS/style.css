@@ -19,14 +19,15 @@ a.url {
     color: darkgoldenrod;
     font-family: silentLips;
     font-size: 20px;
-    width: 100%;
+    
     margin: auto;
 }
 
 .menu {
     text-align: center;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 55%;
     background-color: black;
     z-index: 3;
     transition: background-color 0.3s ease-in-out;
