@@ -23,7 +23,10 @@ img.link {
 }
 
 .textHover {
-    padding: 150px;
+    padding-left: 175px;
+    padding-right: 175px;
+    padding-top: 130px;
+    padding-bottom: 130px;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
