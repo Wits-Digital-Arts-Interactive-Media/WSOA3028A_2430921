@@ -61,9 +61,10 @@ export function initialise(numOfPics) {
         img[i - 1].setAttribute("value", i - 1);
         img[i - 1].classList.add('link');
         div[i - 1].classList.add('portfolioLabel')
-        container.append(cover);
+        
         container.appendChild(img[i - 1]);
         container.appendChild(div[i - 1]);
+        container.append(cover);
        //img[i - 1].appendChild(div[i - 1]);
         
         
@@ -84,9 +85,9 @@ export function initialise(numOfPics) {
         container.onmouseenter = function () {
             var text = document.getElementById(this.name);
             text.style.visibility = 'visible'
-            var cover = this.firstChild;
-            cover.style.width = this.getElementsByName(this.name).width;
-            cover.style.height = this.getElementsByName(this.name).height ;
+            var cover = this.lastChild;
+            cover.style.width = this.firstChild.width;
+            cover.style.height = this.firstChild.height ;
             cover.style.visibility = 'visible'
             //text.classList.add('textHover');
             this.classList.add('hover');
@@ -96,7 +97,7 @@ export function initialise(numOfPics) {
         container.onmouseleave = function () {
             var text = document.getElementById(this.name);
             text.style.visibility = 'hidden';
-            var cover = document.getElementsByName(this.name).firstChild;
+            var cover = this.lastChild;
             cover.style.visibility = 'hidden'
             //text.classList.remove('textHover');
             this.classList.remove('hover');
