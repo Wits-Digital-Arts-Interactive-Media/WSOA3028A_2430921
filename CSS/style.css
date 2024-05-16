@@ -13,11 +13,7 @@ a.url {
     font-size: 20px;
 }
 
-a.inactive {
-    pointer-events: none;
-    cursor: default;
-    color: darkred;
-}
+
 
 
 
@@ -41,6 +37,12 @@ a.inactive {
     z-index: 3;
     transition: background-color 0.3s ease-in-out;
     left: 25%;
+}
+
+a.inactive {
+    pointer-events: none;
+    cursor: default;
+    color: darkred;
 }
 
 .sticky {
