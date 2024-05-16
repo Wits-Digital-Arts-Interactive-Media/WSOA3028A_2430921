@@ -58,7 +58,7 @@ export function initialise(numOfPics) {
             
         img[i - 1].setAttribute("value", i - 1);
         img[i - 1].classList.add('link');
-        div[i - 1].classList.add('label')
+        div[i - 1].classList.add('portfolioLabel')
         container.appendChild(img[i - 1]);
         container.appendChild(div[i - 1]);
        //img[i - 1].appendChild(div[i - 1]);
