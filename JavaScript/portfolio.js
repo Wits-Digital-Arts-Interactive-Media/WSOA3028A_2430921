@@ -81,7 +81,7 @@ export function initialise(numOfPics) {
             text.style.visibility = 'visible'
             text.classList.add('textHover');
             this.classList.add('hover');
-            debug.log("container dim:" + this.clientWidth + " " + this.clientHeight);
+            console.log("container dim:" + this.clientWidth + " " + this.clientHeight);
         };
 
         container.onmouseleave = function () {
