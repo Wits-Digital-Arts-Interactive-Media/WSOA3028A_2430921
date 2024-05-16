@@ -39,13 +39,13 @@ export function initialise(numOfPics) {
         document.createElement('div')
     ]
 
-
     for (var i = 1; i <= numOfPics; i++) {
 
                 
         var container = document.createElement('div')
         container.classList.add('container')
         container.name = portfolioPictures[i - 1].name;
+        var cover = document.createElement('div')
         img[i - 1].src = (portfolioPictures[i - 1].href);
         img[i - 1].name = (portfolioPictures[i - 1].name);
         div[i - 1].textContent = portfolioPictures[i - 1].name;
@@ -62,6 +62,8 @@ export function initialise(numOfPics) {
         container.appendChild(img[i - 1]);
         container.appendChild(div[i - 1]);
        //img[i - 1].appendChild(div[i - 1]);
+        cover.classList.add('textHover');
+        img[i-1].body.appendChild(cover);
         document.body.appendChild(container);
         
 
@@ -79,15 +81,19 @@ export function initialise(numOfPics) {
         container.onmouseenter = function () {
             var text = document.getElementById(this.name);
             text.style.visibility = 'visible'
-            text.classList.add('textHover');
+            var cover = document.getElementsByName(this.name).firstChild;
+            cover.style.visibility = 'visible'
+            //text.classList.add('textHover');
             this.classList.add('hover');
-            console.log("container dim:" + this.clientWidth + " " + this.clientHeight);
+            
         };
 
         container.onmouseleave = function () {
             var text = document.getElementById(this.name);
             text.style.visibility = 'hidden';
-            text.classList.remove('textHover');
+            var cover = document.getElementsByName(this.name).firstChild;
+            cover.style.visibility = 'hidden'
+            //text.classList.remove('textHover');
             this.classList.remove('hover');
         };
         /*img[i - 1].onmouseenter = function (event) {
