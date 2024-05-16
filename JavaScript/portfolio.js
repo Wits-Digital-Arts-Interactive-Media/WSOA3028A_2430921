@@ -46,7 +46,9 @@ export function initialise(numOfPics) {
         container.classList.add('container')
         container.name = portfolioPictures[i - 1].name;
         var cover = document.createElement('div')
+        cover.classList.add('textHover');
         img[i - 1].src = (portfolioPictures[i - 1].href);
+
         img[i - 1].name = (portfolioPictures[i - 1].name);
         div[i - 1].textContent = portfolioPictures[i - 1].name;
         div[i - 1].id = portfolioPictures[i - 1].name; 
@@ -59,11 +61,12 @@ export function initialise(numOfPics) {
         img[i - 1].setAttribute("value", i - 1);
         img[i - 1].classList.add('link');
         div[i - 1].classList.add('portfolioLabel')
+        container.append(cover);
         container.appendChild(img[i - 1]);
         container.appendChild(div[i - 1]);
        //img[i - 1].appendChild(div[i - 1]);
-        cover.classList.add('textHover');
-        img[i-1].body.appendChild(cover);
+        
+        
         document.body.appendChild(container);
         
 
@@ -81,7 +84,9 @@ export function initialise(numOfPics) {
         container.onmouseenter = function () {
             var text = document.getElementById(this.name);
             text.style.visibility = 'visible'
-            var cover = document.getElementsByName(this.name).firstChild;
+            var cover = this.firstChild;
+            cover.style.width = this.getElementsByName(this.name).width;
+            cover.style.height = this.getElementsByName(this.name).height ;
             cover.style.visibility = 'visible'
             //text.classList.add('textHover');
             this.classList.add('hover');
@@ -96,21 +101,6 @@ export function initialise(numOfPics) {
             //text.classList.remove('textHover');
             this.classList.remove('hover');
         };
-        /*img[i - 1].onmouseenter = function (event) {
-            //console.log( this.width + " " + this.height)
-            var text = document.getElementById(this.name);
-            text.style.visibility = 'visible'
-            //this.classList.add('hover');
-            this.parentElement.classList.add('hover');
-        };
-
-        img[i - 1].onmouseleave = function (event) {
-            //console.log( this.width + " " + this.height)
-            var text = document.getElementById(this.name);
-            text.style.visibility = 'hidden';
-            //this.classList.remove('hover');
-            this.parentElement.classList.remove('hover');
-        };*/
 
         
 
