@@ -39,7 +39,8 @@ export function initialise(currentPage) {
         } else 
         {
             const a = document.createElement("a")
-            a.classList.add('inactive')
+            a.classList.add('menu')
+            a.classList.add('inactive')           
             a.innerText = menuItem.name
             a.setAttribute("href", menuItem.href)
             div.appendChild(a)

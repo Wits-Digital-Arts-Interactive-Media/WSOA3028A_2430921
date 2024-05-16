@@ -14,14 +14,9 @@ a.url {
 }
 
 a.inactive {
-    display: inline-flex;
     pointer-events: none;
     cursor: default;
-    padding-left: 10px;
-    padding-right: 10px;
     color: darkred;
-    font-family: silentLips;
-    font-size: 20px;
 }
 
 
