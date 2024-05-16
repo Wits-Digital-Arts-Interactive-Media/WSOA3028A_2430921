@@ -9,7 +9,7 @@ a.url {
     padding-left: 10px;
     padding-right: 10px;
     color: darkgoldenrod;
-    font-family: silentLips;
+    font-family: Krylon;
     font-size: 20px;
 }
 
@@ -78,14 +78,19 @@ body {
 
 *::-webkit-scrollbar {
     display: none;
-} 
+}
 
-h1 {
+h1.title {
+    color: white;
+    font-family: Krylon;
+    text-decoration: underline;
+}
+
+h1.label {
     color: white;
     font-family: silentLips;
     text-decoration: underline;
 }
-
 
 
 h2, h3, h4, h5, h6 {
