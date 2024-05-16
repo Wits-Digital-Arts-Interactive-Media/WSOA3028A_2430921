@@ -33,15 +33,16 @@ export function initialise(currentPage) {
             a.classList.add('menu')
             a.innerText = menuItem.name
             a.setAttribute("href", menuItem.href)
-            //li.appendChild(a)
-            //n.appendChild(a)
             div.appendChild(a)
-            const n = document.createTextNode("     ")
-            div.appendChild(n)
+            
+            
         } else 
         {
-            const n = document.createTextNode(menuItem.name + "     ")
-            div.appendChild(n)
+            const a = document.createElement("a")
+            a.classList.add('inactive')
+            a.innerText = menuItem.name
+            a.setAttribute("href", menuItem.href)
+            div.appendChild(a)
         }
         
 
