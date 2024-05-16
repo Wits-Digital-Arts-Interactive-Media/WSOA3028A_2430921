@@ -25,6 +25,7 @@ a.url {
 
 .menu {
     display: flex;
+    margin: auto;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
