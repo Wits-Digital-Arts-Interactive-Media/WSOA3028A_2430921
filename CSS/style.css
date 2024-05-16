@@ -14,6 +14,7 @@ a.url {
 }
 
 a.inactive {
+    display: inline-flex;
     pointer-events: none;
     cursor: default;
     padding-left: 10px;
