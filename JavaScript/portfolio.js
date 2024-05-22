@@ -48,7 +48,7 @@ export function initialise(numOfPics) {
         var cover = document.createElement('div')
         cover.classList.add('textHover');
         img[i - 1].src = (portfolioPictures[i - 1].href);
-
+        
         img[i - 1].name = (portfolioPictures[i - 1].name);
         div[i - 1].textContent = portfolioPictures[i - 1].name;
         div[i - 1].id = portfolioPictures[i - 1].name; 
@@ -58,13 +58,14 @@ export function initialise(numOfPics) {
             */
 
             
-        img[i - 1].setAttribute("value", i - 1);
+        container.setAttribute("value", i - 1);
         img[i - 1].classList.add('link');
         div[i - 1].classList.add('portfolioLabel')
         
         container.appendChild(img[i - 1]);
-        container.appendChild(div[i - 1]);
         container.append(cover);
+        container.appendChild(div[i - 1]);
+        
        //img[i - 1].appendChild(div[i - 1]);
         
         
@@ -74,7 +75,7 @@ export function initialise(numOfPics) {
 
         img.push(document.createElement('img'));
         div.push(document.createElement('div'));
-        img[i - 1].onclick = function () {
+        container.onclick = function () {
             window.location.href = portfolioItems[this.getAttribute("value")].href;
             
 
@@ -85,9 +86,7 @@ export function initialise(numOfPics) {
         container.onmouseenter = function () {
             var text = document.getElementById(this.name);
             text.style.visibility = 'visible'
-            var cover = this.lastChild;
-            cover.style.width = this.firstChild.width;
-            cover.style.height = this.firstChild.height ;
+            var cover = this.lastChild.previousSibling;           
             cover.style.visibility = 'visible'
             //text.classList.add('textHover');
             this.classList.add('hover');
@@ -97,7 +96,7 @@ export function initialise(numOfPics) {
         container.onmouseleave = function () {
             var text = document.getElementById(this.name);
             text.style.visibility = 'hidden';
-            var cover = this.lastChild;
+            var cover = this.lastChild.previousSibling;
             cover.style.visibility = 'hidden'
             //text.classList.remove('textHover');
             this.classList.remove('hover');
