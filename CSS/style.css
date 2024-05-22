@@ -61,7 +61,7 @@ a.inactive {
     background: rgba(0, 0, 0, 0.5);
     background-color: #232324;
     position: fixed;
-    background-color: gray;
+    //background-color: gray;
 }
 
 body {
