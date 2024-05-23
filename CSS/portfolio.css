@@ -58,13 +58,13 @@ img.display {
 }
 
 img.landscape {
-    width: 75vh;
-    height: 50vh;
+    width: 50vh;
+    height: 25vh;
 }
 
 img.portrait {
-    width: 60vh;
-    height: 75vh;
+    width: 25vh;
+    height: 50vh;
 }
 
 .gallery {
