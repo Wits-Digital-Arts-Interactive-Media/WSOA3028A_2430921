@@ -56,11 +56,11 @@ export function initialise(folder, numOfLPics, numOfPPics) {
     document.body.appendChild(div);
 }
 function openModal() {
-    document.getElementById("gallery").style.display = "block";
+    document.getElementById('gallery').style.display = "block";
 }
 
 function closeModal() {
-    document.getElementById("gallery").style.display = "none";
+    document.getElementById('gallery').style.display = "none";
 }
 
 var slideIndex = 1;
