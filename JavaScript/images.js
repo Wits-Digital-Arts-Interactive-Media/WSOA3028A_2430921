@@ -14,11 +14,11 @@ export function initialise(folder, numOfLPics, numOfPPics) {
     for (var i = 1; i <= numOfLPics; i++) {
         count++;
         const subDiv = document.createElement('div');
-        subdiv.classList.add('slides');
+        subDiv.classList.add('slides');
         const label = document.createElement('div');
         label.innerHTML = `${count} / ${total}`;      
         label.classList.add('numberIndex');
-        subdiv.appendChild(label);
+        subDiv.appendChild(label);
         const img = document.createElement('img');       
         img.src = (`Landscape/${folder} (${i}).jpg`);
         subDiv.appendChild(img);
@@ -31,11 +31,11 @@ export function initialise(folder, numOfLPics, numOfPPics) {
     for (var i = 1; i <= numOfPPics; i++) {
         count++;
         const subDiv = document.createElement('div');
-        subdiv.classList.add('slides');
+        subDiv.classList.add('slides');
         const label = document.createElement('div');
         label.innerHTML = `${count} / ${total}`;
         label.classList.add('numberIndex');
-        subdiv.appendChild(label);
+        subDiv.appendChild(label);
         const img = document.createElement('img');       
         img.src = (`Portrait/${folder} (${i}).jpg`);
         subDiv.appendChild(img);
@@ -47,8 +47,10 @@ export function initialise(folder, numOfLPics, numOfPPics) {
     }
     var a1 = document.createElement('a');
     a1.classList.add('prev');
+    a1.onclick = plusSlides(-1);
     var a2 = document.createElement('a');
     a2.classList.add('next');
+    a2.onclick = plusSlides(1);
     div.appendChild(a1);
     div.appendChild(a2);
     document.body.appendChild(div);
