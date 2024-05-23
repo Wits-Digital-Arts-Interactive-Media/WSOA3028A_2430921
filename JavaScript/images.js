@@ -5,7 +5,9 @@ const root = "/WSOA3028A_2430921/Portfolio"
 
 
 export function initialise(folder, numOfLPics, numOfPPics) {
-
+    const images = [
+        document.createElement('img'),
+    ]
     var count = 0;
     var total = numOfLPics + numOfPPics;
     const div = document.createElement('div');
@@ -21,7 +23,9 @@ export function initialise(folder, numOfLPics, numOfPPics) {
         subDiv.appendChild(label);
         const img = document.createElement('img');       
         img.src = (`Landscape/${folder} (${i}).jpg`);
-        subDiv.appendChild(img);
+        images.src = (`Landscape/${folder} (${i}).jpg`);
+        images.push(document.createElement('img'),)
+        subDiv.appendChild(images[count - 1]);
         img.classList.add('display');
         img.classList.add('landscape');
        /* img.onclick = openModal(), currentSlide(count);*/
@@ -38,7 +42,9 @@ export function initialise(folder, numOfLPics, numOfPPics) {
         subDiv.appendChild(label);
         const img = document.createElement('img');       
         img.src = (`Portrait/${folder} (${i}).jpg`);
-        subDiv.appendChild(img);
+        images.src = (`Portrait/${folder} (${i}).jpg`);
+        images.push(document.createElement('img'),)
+        subDiv.appendChild(images[count-1]);
         img.classList.add('display');
         img.classList.add('portrait');
         /*img.onclick = openModal(), currentSlide(count);*/
@@ -56,6 +62,9 @@ export function initialise(folder, numOfLPics, numOfPPics) {
     document.body.appendChild(div);
     a1.onclick = plusSlides(-1);
     a2.onclick = plusSlides(1);
+    for (var i = 0; i < count; i++) {
+        images[i].onclick = openModal(), currentSlide(i+1);
+    }
 }
 function openModal() {
     document.getElementById('gallery').style.display = "block";
@@ -90,6 +99,6 @@ function showSlides(n) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
     slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
+    
 
 }
