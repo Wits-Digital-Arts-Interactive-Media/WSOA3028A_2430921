@@ -41,7 +41,7 @@ export function initialise(folder, numOfLPics, numOfPPics) {
         subDiv.appendChild(img);
         img.classList.add('display');
         img.classList.add('portrait');
-        i/*mg.onclick = openModal(), currentSlide(count);*/
+        /*img.onclick = openModal(), currentSlide(count);*/
         div.appendChild(subDiv);
         document.body.appendChild(img);
     }
