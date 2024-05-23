@@ -23,14 +23,14 @@ export function initialise(folder, numOfLPics, numOfPPics) {
         subDiv.appendChild(label);
         const img = document.createElement('img');       
         img.src = (`Landscape/${folder} (${i}).jpg`);
-        images.src = (`Landscape/${folder} (${i}).jpg`);
+        images[count - 1].src = (`Landscape/${folder} (${i}).jpg`);
         images.push(document.createElement('img'),)
-        subDiv.appendChild(images[count - 1]);
-        img.classList.add('display');
-        img.classList.add('landscape');
-       /* img.onclick = openModal(), currentSlide(count);*/
+        subDiv.appendChild(img);
+        img.style.width = "100%";
+        images[count - 1].classList.add('display');
+        images[count - 1].classList.add('portrait');     
         div.appendChild(subDiv);
-        document.body.appendChild(img);
+        document.body.appendChild(images[count - 1]);
     }
     for (var i = 1; i <= numOfPPics; i++) {
         count++;
@@ -42,14 +42,16 @@ export function initialise(folder, numOfLPics, numOfPPics) {
         subDiv.appendChild(label);
         const img = document.createElement('img');       
         img.src = (`Portrait/${folder} (${i}).jpg`);
-        images.src = (`Portrait/${folder} (${i}).jpg`);
+        images[count - 1].src = (`Portrait/${folder} (${i}).jpg`);
         images.push(document.createElement('img'),)
-        subDiv.appendChild(images[count-1]);
-        img.classList.add('display');
-        img.classList.add('portrait');
-        /*img.onclick = openModal(), currentSlide(count);*/
+        subDiv.appendChild(img);
+        img.style.width = "100%";
+        /*img.classList.add('display');
+        img.classList.add('portrait');*/
+        images[count - 1].classList.add('display');
+        images[count - 1].classList.add('portrait');
         div.appendChild(subDiv);
-        document.body.appendChild(img);
+        document.body.appendChild(images[count - 1]);
     }
     var a1 = document.createElement('a');
     a1.classList.add('prev');
