@@ -29,26 +29,27 @@ export function initialise(currentPage) {
         //var n = document.createTextNode("")
         //p.appendChild(n)
         if (currentPage != menuItem.name) {
-            const a = document.createElement("a")
-            a.classList.add('menu')
-            a.innerText = menuItem.name
-            a.setAttribute("href", menuItem.href)
-            div.appendChild(a)
+            const a = document.createElement("a");
+            a.classList.add('menu');
+            a.innerText = menuItem.name;
+            a.setAttribute("href", menuItem.href);
+            div.appendChild(a);
             
             
         } else 
         {
-            const a = document.createElement("a")      
-            a.classList.add('inactive')           
-            a.innerText = menuItem.name
-            a.setAttribute("href", menuItem.href)
-            div.appendChild(a)
+            const a = document.createElement("a");     
+            a.classList.add('inactive');    
+            a.innerText = menuItem.name;
+            a.setAttribute("href", menuItem.href);
+            div.appendChild(a);
         }
         
 
 
     }
     //nav.appendChild(ul)
-    nav.appendChild(div)
-    nav.appendChild(document.createElement("hr"))
+    //div.id = "navigation";
+    nav.appendChild(div);
+    nav.appendChild(document.createElement("hr"));
 }

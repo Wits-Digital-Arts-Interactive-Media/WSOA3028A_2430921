@@ -4,7 +4,7 @@ const root = "/WSOA3028A_2430921/Portfolio"
 
 
 
-export function initialise(folder, numOfPics) {
+export function initialise(folder, numOfLPics, numOfPPics) {
 
     /*
     const img = [
@@ -27,58 +27,18 @@ export function initialise(folder, numOfPics) {
     document.body.appendChild(img[0])
     */
     
-    for (var i = 1; i <= numOfPics; i++) {
+    for (var i = 1; i <= numOfLPics; i++) {
 
         const img = document.createElement('img')
-        img.src = (`${folder} (${i}).jpg`)
-        if (img.naturalWidth < img.naturalHeight) {
-
-            tallImg[tallCount].src = (`${folder} (${i}).jpg`)
-            tallImg[tallCount].classList.add('display')
-/*            tallImg[tallCount].onload = function () {
-                tallImg[tallCount].width = tallImg[tallCount].naturalWidth / 12
-                tallImg[tallCount].height = tallImg[tallCount].naturalHeight / 12
-
-                tallCount++
-                tallImg.push(document.createElement('img'))
-            }*/
-  
-
-            tallCount++
-            tallImg.push(document.createElement('img'))
-
-        } else {
-
-            wideImg[wideCount].src = (`${folder} (${i}).jpg`)
-            wideImg[wideCount].classList.add('display')
-/*            wideImg[wideCount].onload = function () {
-                wideImg[wideCount].width = wideImg[wideCount].naturalWidth / 12
-                wideImg[wideCount].height = wideImg[wideCount].naturalHeight / 12
-
-                wideCount++
-                wideImg.push(document.createElement('img'))
-            }*/
-
-            wideCount++
-            wideImg.push(document.createElement('img'))
-
-        }
-
-        for (var j = 0; j < tallCount; j++) {
-            document.body.appendChild(tallImg[j])
-        }
-
-        for (var k = 0; k < wideCount; k++) {
-            document.body.appendChild(wideImg[k])
-        }
-        /*img[i - 1].src = (`${folder}${i}.jpg`)
-
-        img[i-1].width = img[i-1].naturalWidth/12
-        img[i-1].height = img[i-1].naturalHeight/12
-        document.body.appendChild(img[i-1])
-        img.push(document.createElement('img'))*/
+        img.src = (`Landscape/${folder} (${i}).jpg`)
+        document.body.appendChild(img);
     }
-    
+    for (var i = 1; i <= numOfPPics; i++) {
+
+        const img = document.createElement('img')
+        img.src = (`Portrait/${folder} (${i}).jpg`)
+        document.body.appendChild(img);
+    }
 
 
 }

@@ -9,10 +9,11 @@ window.addEventListener("scroll", function () {
     /*console.log('Y:' + scrollY);
     console.log('Top:' + document.documentElement.scrollTop)*/
     if (window.pageYOffset > header.offsetTop) {
-        console.log("scroll");
-        header.classList.add("sticky");
+        
+        //header.classList.add("sticky");
+        header.id = 'sticky';
     } else {
-        console.log("stop");
-        header.classList.remove("sticky");
+        
+        header.removeAttribute('id');
     }
 })

@@ -51,7 +51,7 @@ a.inactive {
     margin: auto;
 }
 
-.sticky {
+#sticky {
     text-align: center;
     width: 50%;
     top: 0;
