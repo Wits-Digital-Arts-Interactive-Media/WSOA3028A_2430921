@@ -59,12 +59,12 @@ img.display {
 
 img.landscape {
     width: 50vh;
-    height: 25vh;
+    height: auto;
 }
 
 img.portrait {
     width: 25vh;
-    height: 50vh;
+    height: auto;
 }
 
 .gallery {

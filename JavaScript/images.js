@@ -47,13 +47,15 @@ export function initialise(folder, numOfLPics, numOfPPics) {
     }
     var a1 = document.createElement('a');
     a1.classList.add('prev');
-    /*a1.onclick = plusSlides(-1);*/
+    
     var a2 = document.createElement('a');
     a2.classList.add('next');
-    /*a2.onclick = plusSlides(1);*/
+    
     div.appendChild(a1);
     div.appendChild(a2);
     document.body.appendChild(div);
+    a1.onclick = plusSlides(-1);
+    a2.onclick = plusSlides(1);
 }
 function openModal() {
     document.getElementById('gallery').style.display = "block";
