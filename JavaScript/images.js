@@ -102,6 +102,10 @@ function printNum(num) {
 
 function openGallery() {
     document.getElementById('gallery').style.display = "block";
+
+    let header = document.getElementById('sticky');
+    if (header != null && header != undefined)
+        header.removeAttribute('id');
 }
 
 function closeGallery() {
