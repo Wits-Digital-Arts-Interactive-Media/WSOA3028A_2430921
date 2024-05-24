@@ -74,7 +74,7 @@ export function initialise(folder, numOfLPics, numOfPPics) {
     a1.onclick = plusSlides(-1);
     a2.onclick = plusSlides(1);
     for (var i = 0; i < count; i++) {
-        images[i].onclick = openGallery();/*, currentSlide(i+1);*/
+        images[i].onclick = openGallery ();/*, currentSlide(i+1);*/
     }
     showSlides(slideIndex);
 }
