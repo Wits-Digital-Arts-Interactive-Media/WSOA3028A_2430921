@@ -74,11 +74,17 @@ export function initialise(folder, numOfLPics, numOfPPics) {
     a1.onclick = plusSlides(-1);
     a2.onclick = plusSlides(1);
     for (var i = 0; i < count; i++) {
-        images[i].onclick = function () { console.log(i); };
+        images[i].id = i;
+        images[i].onclick = printNum(this.id);
             /*openGallery ();*//*, currentSlide(i+1);*/
     }
     showSlides(slideIndex);
 }
+
+function printNum(num) {
+    console.log(i);
+}
+
 function openGallery() {
     document.getElementById('gallery').style.display = "block";
 }
