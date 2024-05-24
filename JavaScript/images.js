@@ -2,14 +2,15 @@
 
 const root = "/WSOA3028A_2430921/Portfolio"
 
+var slideIndex = 1;
 
 
 export function initialise(folder, numOfLPics, numOfPPics) {
     const images = [
         document.createElement('img'),
     ]
-    var count = 0;
-    var total = numOfLPics + numOfPPics;
+    let count = 0;
+    let total = numOfLPics + numOfPPics;
     const div = document.createElement('div');
     div.id = 'gallery';
     div.classList.add('gallery');
@@ -53,10 +54,10 @@ export function initialise(folder, numOfLPics, numOfPPics) {
         div.appendChild(subDiv);
         document.body.appendChild(images[count - 1]);
     }
-    var a1 = document.createElement('a');
+    let a1 = document.createElement('a');
     a1.classList.add('prev');
     
-    var a2 = document.createElement('a');
+    let a2 = document.createElement('a');
     a2.classList.add('next');
     
     div.appendChild(a1);
@@ -67,6 +68,7 @@ export function initialise(folder, numOfLPics, numOfPPics) {
     for (var i = 0; i < count; i++) {
         images[i].onclick = openModal(), currentSlide(i+1);
     }
+    showSlides(slideIndex);
 }
 function openModal() {
     document.getElementById('gallery').style.display = "block";
@@ -76,8 +78,7 @@ function closeModal() {
     document.getElementById('gallery').style.display = "none";
 }
 
-var slideIndex = 1;
-showSlides(slideIndex);
+
 
 function plusSlides(n) {
     showSlides(slideIndex += n);
