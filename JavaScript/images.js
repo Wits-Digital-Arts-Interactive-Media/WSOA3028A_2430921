@@ -28,7 +28,7 @@ export function initialise(folder, numOfLPics, numOfPPics) {
         images[count - 1].src = (`Landscape/${folder} (${i}).jpg`);
         images.push(document.createElement('img'),)
         subDiv.appendChild(img);
-        img.style.width = "100%";
+        img.style.width = "50%";
         images[count - 1].classList.add('display');
         images[count - 1].classList.add('landscape');     
         div.appendChild(subDiv);
@@ -49,7 +49,7 @@ export function initialise(folder, numOfLPics, numOfPPics) {
         images[count - 1].src = (`Portrait/${folder} (${i}).jpg`);
         images.push(document.createElement('img'),)
         subDiv.appendChild(img);
-        img.style.width = "100%";
+        img.style.width = "25%";
         /*img.classList.add('display');
         img.classList.add('portrait');*/
         images[count - 1].classList.add('display');
@@ -71,8 +71,8 @@ export function initialise(folder, numOfLPics, numOfPPics) {
     
     document.body.appendChild(div);
     div.style.display = 'none';
-    a1.onclick = plusSlides(-1);
-    a2.onclick = plusSlides(1);
+    a1.addEventListener("click", function () { plusSlides(-1); })
+    a2.addEventListener("click", function () { plusSlides(1); })
     for (var i = 0; i < count; i++) {
         images[i].id = i;
         images[i].addEventListener("click", function () { openGallery(); showSlides(images[i].id)});

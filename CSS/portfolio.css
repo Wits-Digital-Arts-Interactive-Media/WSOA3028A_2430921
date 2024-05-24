@@ -89,6 +89,8 @@ img.portrait {
 }
 
 .slides {
+    width: 50%;
+    height: auto;
     display: none;
 }
 
