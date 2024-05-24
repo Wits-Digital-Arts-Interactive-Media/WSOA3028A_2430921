@@ -81,9 +81,9 @@ export function initialise(folder, numOfLPics, numOfPPics) {
     for (var i = 0; i < count; i++) {
         images[i].id = i;
         images[i].addEventListener("click", function () {
-            openGallery(); showSlides(this.id); printNum(this.id); printNum(i);
+            openGallery();
             let item = this.id;
-            printNum(item);
+            showSlides(item +1);
         });
          
             /*openGallery ();*//*, currentSlide(i+1);*/

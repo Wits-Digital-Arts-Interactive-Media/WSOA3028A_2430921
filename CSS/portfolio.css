@@ -143,7 +143,8 @@ img.portrait {
 }
 
 .close:hover {
-    color: #999;
+    /*color: #999;*/
     text-decoration: none;
     cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1);
 }
