@@ -80,7 +80,7 @@ export function initialise(folder, numOfLPics, numOfPPics) {
     span.addEventListener("click", function () { closeGallery(); });
     for (var i = 0; i < count; i++) {
         images[i].id = i;
-        images[i].addEventListener("click", function () { openGallery(); showSlides(images[i].id)});
+        images[i].addEventListener("click", function () { openGallery(); showSlides(this.id)});
          
             /*openGallery ();*//*, currentSlide(i+1);*/
     }
