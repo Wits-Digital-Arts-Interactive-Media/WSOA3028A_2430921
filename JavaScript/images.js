@@ -86,7 +86,7 @@ export function initialise(folder, numOfLPics, numOfPPics) {
             printNum(item);
             printNum(item + 1);
             printNum(i);
-            showSlides(item +1);
+            currentSlide(item);
         });
          
             /*openGallery ();*//*, currentSlide(i+1);*/
