@@ -14,6 +14,10 @@ export function initialise(folder, numOfLPics, numOfPPics) {
     const div = document.createElement('div');
     div.id = 'gallery';
     div.classList.add('gallery');
+    let span = document.createElement('span');
+    span.classList.add('close');
+    span.innerHTML = '&times';
+    div.appendChild(span);
     const landscapeDiv = document.createElement('div');
     for (var i = 1; i <= numOfLPics; i++) {
         count++;
@@ -71,8 +75,9 @@ export function initialise(folder, numOfLPics, numOfPPics) {
     
     document.body.appendChild(div);
     div.style.display = 'none';
-    a1.addEventListener("click", function () { plusSlides(-1); })
-    a2.addEventListener("click", function () { plusSlides(1); })
+    a1.addEventListener("click", function () { plusSlides(-1); });
+    a2.addEventListener("click", function () { plusSlides(1); });
+    span.addEventListener("click", function () { closeGallery(); });
     for (var i = 0; i < count; i++) {
         images[i].id = i;
         images[i].addEventListener("click", function () { openGallery(); showSlides(images[i].id)});
