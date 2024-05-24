@@ -59,6 +59,12 @@ img.display {
     padding-top: 5px;
     padding-bottom: 5px;
     object-fit: cover;
+    transition: 0.3s;
+}
+
+.display:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
 }
 
 img.landscape {
@@ -97,7 +103,7 @@ img.portrait {
 }
 
 .prev,.next {
-    left: 0;
+    z-index: 3;
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -113,6 +119,31 @@ img.portrait {
     -webkit-user-select: none;
 }
 
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
 .prev:hover,.next:hover {
     background-color: rgba(0, 0, 0, 0.8);
+}
+
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
 }

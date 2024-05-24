@@ -14,6 +14,7 @@ export function initialise(folder, numOfLPics, numOfPPics) {
     const div = document.createElement('div');
     div.id = 'gallery';
     div.classList.add('gallery');
+    const landscapeDiv = document.createElement('div');
     for (var i = 1; i <= numOfLPics; i++) {
         count++;
         const subDiv = document.createElement('div');
@@ -31,8 +32,10 @@ export function initialise(folder, numOfLPics, numOfPPics) {
         images[count - 1].classList.add('display');
         images[count - 1].classList.add('portrait');     
         div.appendChild(subDiv);
-        document.body.appendChild(images[count - 1]);
+        landscapeDiv.appendChild(images[count - 1]);
     }
+    document.body.appendChild(landscapeDiv);
+    const portraitDiv = document.createElement('div');
     for (var i = 1; i <= numOfPPics; i++) {
         count++;
         const subDiv = document.createElement('div');
@@ -52,29 +55,34 @@ export function initialise(folder, numOfLPics, numOfPPics) {
         images[count - 1].classList.add('display');
         images[count - 1].classList.add('portrait');
         div.appendChild(subDiv);
-        document.body.appendChild(images[count - 1]);
+        portraitDiv.appendChild(images[count - 1]);
     }
+    document.body.appendChild(portraitDiv);
     let a1 = document.createElement('a');
     a1.classList.add('prev');
+    a1.innerHTML = '&#10094';
     
     let a2 = document.createElement('a');
     a2.classList.add('next');
-    
+    a2.innerHTML = '&#10095';
+
     div.appendChild(a1);
     div.appendChild(a2);
+    
     document.body.appendChild(div);
+    div.style.display = 'none';
     a1.onclick = plusSlides(-1);
     a2.onclick = plusSlides(1);
     for (var i = 0; i < count; i++) {
-        images[i].onclick = openModal(), currentSlide(i+1);
+        images[i].onclick = openGallery(), currentSlide(i+1);
     }
     showSlides(slideIndex);
 }
-function openModal() {
+function openGallery() {
     document.getElementById('gallery').style.display = "block";
 }
 
-function closeModal() {
+function closeGallery() {
     document.getElementById('gallery').style.display = "none";
 }
 
