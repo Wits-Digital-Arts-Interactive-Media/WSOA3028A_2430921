@@ -82,7 +82,7 @@ export function initialise(folder, numOfLPics, numOfPPics) {
 }
 
 function printNum(num) {
-    console.log(i);
+    console.log(num);
 }
 
 function openGallery() {
