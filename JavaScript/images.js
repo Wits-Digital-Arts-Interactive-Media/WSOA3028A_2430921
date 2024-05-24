@@ -30,7 +30,7 @@ export function initialise(folder, numOfLPics, numOfPPics) {
         subDiv.appendChild(img);
         img.style.width = "100%";
         images[count - 1].classList.add('display');
-        images[count - 1].classList.add('portrait');     
+        images[count - 1].classList.add('landscape');     
         div.appendChild(subDiv);
         landscapeDiv.appendChild(images[count - 1]);
     }
@@ -74,7 +74,8 @@ export function initialise(folder, numOfLPics, numOfPPics) {
     a1.onclick = plusSlides(-1);
     a2.onclick = plusSlides(1);
     for (var i = 0; i < count; i++) {
-        images[i].onclick = openGallery ();/*, currentSlide(i+1);*/
+        images[i].onclick = function () { console.log(i); };
+            /*openGallery ();*//*, currentSlide(i+1);*/
     }
     showSlides(slideIndex);
 }

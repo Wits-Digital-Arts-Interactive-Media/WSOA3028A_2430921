@@ -1,6 +1,4 @@
-﻿* {
-    box-sizing: border-box;
-}
+﻿
 
 .container {
     padding-left: 12px;
@@ -64,17 +62,17 @@ img.display {
 
 .display:hover {
     cursor: pointer;
-    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    box-shadow: 0 4px 8px 2px rgba(255, 255, 255, 0.2), 0 6px 20px 4px rgba(255, 255, 255, 0.19);
 }
 
 img.landscape {
-    width: 50vh;
-    height: auto;
+    width: 60vh;
+    height: 35vh;
 }
 
 img.portrait {
-    width: 25vh;
-    height: auto;
+    width: 35vh;
+    height: 60vh;
 }
 
 .gallery {

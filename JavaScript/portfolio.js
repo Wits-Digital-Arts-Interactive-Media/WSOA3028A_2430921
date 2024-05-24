@@ -109,7 +109,7 @@ export function initialise(numOfPics) {
     }
 
 
-    setInterval(updateImages(numOfPics), 5000);
+    /*setInterval(updateImages(numOfPics), 5000);*/
 }
 
 function updateImages(numOfPics) {
