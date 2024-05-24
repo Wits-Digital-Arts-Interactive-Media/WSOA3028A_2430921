@@ -75,10 +75,13 @@ export function initialise(folder, numOfLPics, numOfPPics) {
     a2.onclick = plusSlides(1);
     for (var i = 0; i < count; i++) {
         images[i].id = i;
-        images[i].onclick = printNum(images[i].id);
+        images[i].addEventListener("click", function () { openGallery(); showSlides(images[i].id)});
+        images[i].para
             /*openGallery ();*//*, currentSlide(i+1);*/
     }
     showSlides(slideIndex);
+
+
 }
 
 function printNum(num) {
