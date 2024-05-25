@@ -43,7 +43,7 @@ a.inactive {
     display: inline-flex;
     pointer-events: none;
     cursor: default;
-    color: darkred;
+    color: silver;
     padding-left: 5px;
     padding-right: 5px;
     font-family: silentLips;

@@ -33,6 +33,7 @@ export function initialise(folder, numOfLPics, numOfPPics) {
         images.push(document.createElement('img'),)
         subDiv.appendChild(img);
         img.style.width = "50%";
+        img.style.paddingTop = "55px";
         images[count - 1].classList.add('display');
         images[count - 1].classList.add('landscape');     
         div.appendChild(subDiv);
@@ -54,6 +55,7 @@ export function initialise(folder, numOfLPics, numOfPPics) {
         images.push(document.createElement('img'),)
         subDiv.appendChild(img);
         img.style.width = "25%";
+        img.style.paddingTop = "35px";
         /*img.classList.add('display');
         img.classList.add('portrait');*/
         images[count - 1].classList.add('display');
