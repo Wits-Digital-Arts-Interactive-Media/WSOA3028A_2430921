@@ -83,7 +83,8 @@ export function initialise(folder, numOfLPics, numOfPPics) {
         images[i].addEventListener("click", function () {
             openGallery();
             let item = this.id;
-            currentSlide(item + 1);
+            item++;
+            currentSlide(item);
         });
          
             /*openGallery ();*//*, currentSlide(i+1);*/
