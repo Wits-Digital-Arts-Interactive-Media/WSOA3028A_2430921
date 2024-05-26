@@ -210,6 +210,9 @@
         padding-bottom: 1px;
         object-fit: cover;
         transition: 0.3s;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .display:hover {
@@ -219,13 +222,12 @@
     }
 
     img.landscape {
-        width: 53vh;
-        height: 35vh;
+        width: 100%;
     }
 
     img.portrait {
-        width: 53vh;
-        height: 60vh;
+        width: 100%;
+        
     }
 
     .gallery {
