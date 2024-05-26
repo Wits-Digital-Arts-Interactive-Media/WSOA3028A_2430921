@@ -32,7 +32,8 @@ export function initialise(folder, numOfLPics, numOfPPics) {
         images[count - 1].src = (`Landscape/${folder} (${i}).jpg`);
         images.push(document.createElement('img'),)
         subDiv.appendChild(img);
-        img.classList.add('slidesDisplay');
+        img.style.width = '75%';
+        img.style.paddingTop = '155px';
         images[count - 1].classList.add('display');
         images[count - 1].classList.add('landscape');     
         div.appendChild(subDiv);
@@ -53,7 +54,8 @@ export function initialise(folder, numOfLPics, numOfPPics) {
         images[count - 1].src = (`Portrait/${folder} (${i}).jpg`);
         images.push(document.createElement('img'),);
         subDiv.appendChild(img);
-        img.classList.add('slidesDisplay');
+        img.style.width = '80%';
+        img.style.paddingTop = '15px';
         /*img.classList.add('display');
         img.classList.add('portrait');*/
         images[count - 1].classList.add('display');

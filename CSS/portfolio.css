@@ -58,7 +58,7 @@
 
     .display:hover {
         cursor: pointer;
-        transform: scale(1.1);
+        transform: scale(1.05);
         box-shadow: 0 4px 8px 2px rgba(255, 255, 255, 0.2), 0 6px 20px 4px rgba(255, 255, 255, 0.19);
     }
 
@@ -217,7 +217,7 @@
 
     .display:hover {
         cursor: pointer;
-        transform: scale(1.1);
+        //transform: scale(1.1);
         box-shadow: 0 4px 8px 2px rgba(255, 255, 255, 0.2), 0 6px 20px 4px rgba(255, 255, 255, 0.19);
     }
 
@@ -250,9 +250,9 @@
     }
 
     .slidesDisplay {
-        width: 40%;
-        padding-top: 25px;
-        padding-right: 375px;
+        width: 80%;
+        
+        
     }
 
     .numberIndex {
