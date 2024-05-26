@@ -33,7 +33,7 @@ export function initialise(folder, numOfLPics, numOfPPics) {
         images.push(document.createElement('img'),)
         subDiv.appendChild(img);
         img.classList.add('slidesDisplayPortrait');
-        
+       
         images[count - 1].classList.add('display');
         images[count - 1].classList.add('landscape');     
         div.appendChild(subDiv);
@@ -54,9 +54,7 @@ export function initialise(folder, numOfLPics, numOfPPics) {
         images[count - 1].src = (`Portrait/${folder} (${i}).jpg`);
         images.push(document.createElement('img'),);
         subDiv.appendChild(img);
-        img.classList.add('slidesDisplayLandscape');
-        
-        
+        img.classList.add('slidesDisplayLandscape');               
         images[count - 1].classList.add('display');
         images[count - 1].classList.add('portrait');
         div.appendChild(subDiv);
