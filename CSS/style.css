@@ -127,8 +127,10 @@
 
     .menu, a.menu {
         display: inline-flex;
+        flex-wrap: wrap;
         padding-left: 5px;
         padding-right: 5px;
+        padding-bottom: 5px;
         color: darkgoldenrod;
         font-family: silentLips;
         font-size: 20px;
@@ -154,6 +156,7 @@
         color: silver;
         padding-left: 5px;
         padding-right: 5px;
+        padding-bottom: 5px;
         font-family: silentLips;
         font-size: 20px;
         margin: auto;
@@ -184,9 +187,9 @@
         scrollbar-width: none;
     }
 
-        *::-webkit-scrollbar {
+    *::-webkit-scrollbar {
             display: none;
-        }
+    }
 
     h1.title {
         color: white;
@@ -212,7 +215,7 @@
     }
 
     .video {
-        padding-top: 130px;
+        padding-top: 10px;
         display: block;
         margin: auto;
         object-fit: contain;
@@ -269,6 +272,7 @@
         font-family: silentLips;
         font-size: 22px;
         margin: auto;
+        padding-bottom: 5px;
     }
 
     #sticky {

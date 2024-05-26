@@ -62,24 +62,24 @@
 @media only screen and (min-width: 600px) {
     div.content {
         color: white;
-        font-size: 16px;
+        font-size: 20px;
         font-family: Krylon;
         border-style: solid;
         border-width: 2px;
         border-color: white;
-        margin-right: 20%;
-        margin-left: 20%;
+        margin-right: 5%;
+        margin-left: 5%;
         margin-top: 15px;
         margin-bottom: 15px;
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
     }
 
 
     img {
         padding-top: 20px;
         padding-bottom: 20px;
-        width: 50%;
+        width: 95%;
         height: auto;
     }
 
@@ -96,8 +96,8 @@
         border-style: solid;
         border-width: 2px;
         border-color: white;
-        margin-right: 450px;
-        margin-left: 450px;
+        margin-right: 45px;
+        margin-left: 45px;
         margin-top: 15px;
         margin-bottom: 15px;
     }
