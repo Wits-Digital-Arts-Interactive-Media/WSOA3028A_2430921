@@ -2,7 +2,7 @@
 
 const root = "/WSOA3028A_2430921/Portfolio"
 
-var count = 0;
+let count = 0;
 
 const portfolioItems =
     [
@@ -39,13 +39,13 @@ export function initialise(numOfPics) {
         document.createElement('div')
     ]
 
-    for (var i = 1; i <= numOfPics; i++) {
+    for (let i = 1; i <= numOfPics; i++) {
 
                 
-        var container = document.createElement('div')
+        let container = document.createElement('div')
         container.classList.add('container')
         container.name = portfolioPictures[i - 1].name;
-        var cover = document.createElement('div')
+        let cover = document.createElement('div')
         cover.classList.add('textHover');
         img[i - 1].src = (portfolioPictures[i - 1].href);
         
@@ -84,9 +84,9 @@ export function initialise(numOfPics) {
 
 
         container.onmouseenter = function () {
-            var text = document.getElementById(this.name);
+            let text = document.getElementById(this.name);
             text.style.visibility = 'visible'
-            var cover = this.lastChild.previousSibling;           
+            let cover = this.lastChild.previousSibling;           
             cover.style.visibility = 'visible'
             //text.classList.add('textHover');
             this.classList.add('hover');
@@ -94,9 +94,9 @@ export function initialise(numOfPics) {
         };
 
         container.onmouseleave = function () {
-            var text = document.getElementById(this.name);
+            let text = document.getElementById(this.name);
             text.style.visibility = 'hidden';
-            var cover = this.lastChild.previousSibling;
+            let cover = this.lastChild.previousSibling;
             cover.style.visibility = 'hidden'
             //text.classList.remove('textHover');
             this.classList.remove('hover');
@@ -113,7 +113,7 @@ export function initialise(numOfPics) {
 }
 
 function updateImages(numOfPics) {
-    for (var i = 1; i <= numOfPics; i++) {
+    for (let i = 1; i <= numOfPics; i++) {
         console.log(portfolioPictures[i - 1].href + `.jpg`);
     }
 }

@@ -26,8 +26,7 @@ export function initialise(currentPage) {
     div.id = 'menu';
     for (let menuItem of menuItems) {
         
-        //var n = document.createTextNode("")
-        //p.appendChild(n)
+        
         if (currentPage != menuItem.name) {
             const a = document.createElement("a");
             a.classList.add('menu');
@@ -48,8 +47,7 @@ export function initialise(currentPage) {
 
 
     }
-    //nav.appendChild(ul)
-    //div.id = "navigation";
+    
     nav.appendChild(div);
     nav.appendChild(document.createElement("hr"));
 }

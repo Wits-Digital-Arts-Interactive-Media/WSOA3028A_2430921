@@ -2,7 +2,7 @@
 
 const root = "/WSOA3028A_2430921/Portfolio"
 
-var slideIndex = 1;
+let slideIndex = 1;
 
 
 export function initialise(folder, numOfLPics, numOfPPics) {
@@ -19,7 +19,7 @@ export function initialise(folder, numOfLPics, numOfPPics) {
     span.innerHTML = '&times';
     div.appendChild(span);
     const landscapeDiv = document.createElement('div');
-    for (var i = 1; i <= numOfLPics; i++) {
+    for (let i = 1; i <= numOfLPics; i++) {
         count++;
         const subDiv = document.createElement('div');
         subDiv.classList.add('slides');
@@ -41,7 +41,7 @@ export function initialise(folder, numOfLPics, numOfPPics) {
     }
     document.body.appendChild(landscapeDiv);
     const portraitDiv = document.createElement('div');
-    for (var i = 1; i <= numOfPPics; i++) {
+    for (let i = 1; i <= numOfPPics; i++) {
         count++;
         const subDiv = document.createElement('div');
         subDiv.classList.add('slides');
@@ -77,7 +77,7 @@ export function initialise(folder, numOfLPics, numOfPPics) {
     a1.addEventListener("click", function () { plusSlides(-1); });
     a2.addEventListener("click", function () { plusSlides(1); });
     span.addEventListener("click", function () { closeGallery(); });
-    for (var i = 0; i < count; i++) {
+    for (let i = 0; i < count; i++) {
         images[i].id = i;
         images[i].addEventListener("click", function () {
             openGallery();
@@ -120,9 +120,9 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("slides");
-    var dots = document.getElementsByClassName("demo");
+    let i;
+    let slides = document.getElementsByClassName("slides");
+    let dots = document.getElementsByClassName("demo");
 
     if (n > slides.length) { slideIndex = 1 }
     if (n < 1) { slideIndex = slides.length }

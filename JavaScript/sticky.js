@@ -4,7 +4,7 @@
 
 window.addEventListener("scroll", function () {
     
-    var header = document.querySelector(".menu");
+    let header = document.querySelector(".menu");
     //console.log(offSet);
     /*console.log('Y:' + scrollY);
     console.log('Top:' + document.documentElement.scrollTop)*/
