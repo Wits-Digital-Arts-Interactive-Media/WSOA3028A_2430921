@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio Page for Sail's website">
     <meta name="author" content="Suhail Jadwat">
-    <title>Portfolio Landscapes</title>
+    <title>Portfolio Short Films</title>
     <link rel="stylesheet" href="../../CSS/portfolio.css">
     <link rel="stylesheet" href="../../CSS/style.css">
     <script type="module">
@@ -32,7 +32,7 @@
     <hr class="divider">
     <h2>Ghosts and Grievances: Part 1</h2>
     <div class="filmHolder">
-        <video class="filmHoriz" id="1">
+        <video class="filmHoriz" id="1" poster="Part 1.png">
             <source src="Part 1.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
@@ -47,7 +47,7 @@
     <hr class="divider">
     <h2>Ghosts and Grievances: Part 2</h2>
     <div class="filmHolder">
-        <video class="filmHoriz" id="2">
+        <video class="filmHoriz" id="2" poster="Part 2.png">
             <source src="Part 2.mp4" type="video/mp4">
 
             Your browser does not support the video tag.
@@ -63,7 +63,7 @@
     <hr class="divider">
     <h2>Post Success Depression</h2>
     <div class="filmHolder">
-        <video class="filmHoriz" id="3">
+        <video class="filmHoriz" id="3" poster="PSD.png">
             <source src="PSD.mp4" type="video/mp4">
 
             Your browser does not support the video tag.
@@ -79,7 +79,7 @@
     <hr class="divider">
     <h2>I love Rainy Days</h2>
     <div class="filmHolder">
-        <video class="filmVert" id="4">
+        <video class="filmVert" id="4" poster="ILikeRain.png">
             <source src="ILikeRain.mp4" type="video/mp4">
 
             Your browser does not support the video tag.
@@ -95,7 +95,7 @@
     <hr class="divider">
     <h2>The Ghost in my Bed</h2>
     <div class="filmHolder">
-        <video class="filmHoriz" id="5">
+        <video class="filmHoriz" id="5" poster="Ghost.png">
             <source src="Ghost.mp4" type="video/mp4">
 
             Your browser does not support the video tag.
@@ -108,6 +108,10 @@
             <input type="range" min="0" max="100" value="100" oninput="changeVolume(5)" class="slider" id="slider5">
         </div>
     </div>
+    <script type="module">
+
+        import { initialise } from "../../JavaScript/scroll.js"
+        initialise()</script>
 
 </body>
 
