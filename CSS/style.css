@@ -338,12 +338,10 @@
         font-family: Krylon;
     }
 
-    .video {
-        
+    .video {        
         display: block;
         margin: auto;
-        object-fit: contain;
-        
+        object-fit: contain;        
         top: 0;
         left: 0;
         width: 100vw;
