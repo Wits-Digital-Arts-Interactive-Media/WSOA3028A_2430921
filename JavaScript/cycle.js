@@ -17,10 +17,10 @@ let picIndex = 0;
 
 export function initialise() {
     displayPic.src = (portfolioPictures[picIndex].href);
-    setInterval(updateImages(), 2);
+    
 }
 
-
+setInterval(updateImages(), 2000);
 
 function updateImages() {   
     picIndex++;
