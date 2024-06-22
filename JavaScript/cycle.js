@@ -19,7 +19,7 @@ export function initialise() {
     displayPic.src = (portfolioPictures[picIndex].href);
     setInterval(function updateImages() {
         picIndex++;
-        console.log(picIndex);
+        
         if (picIndex >= 7) {
             picIndex = 0;
         }

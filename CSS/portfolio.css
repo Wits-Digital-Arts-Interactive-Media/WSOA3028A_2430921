@@ -384,9 +384,9 @@
         border-radius: 3px 0 0 3px;
     }
 
-        .prev:hover, .next:hover {
+    .prev:hover, .next:hover {
             background-color: rgba(255, 255, 255, 0.1);
-        }
+    }
 
     .close {
         color: white;
@@ -397,12 +397,102 @@
         font-weight: bold;
     }
 
-        .close:hover {
+    .close:hover {
             /*color: #999;*/
             text-decoration: none;
             cursor: pointer;
             background-color: rgba(255, 255, 255, 0.1);
-        }
+    }
+
+    .filmHoriz {
+        display: inline;
+        margin: auto;
+        object-fit: contain;
+        padding-left: 50px;
+        top: 0;
+        left: 0;
+        width: 35%;
+        height: auto;
+        z-index: -1;
+    }
+
+    .filmVert {
+        display: inline;
+        margin: auto;
+        object-fit: contain;
+        padding-left: 50px;
+        top: 0;
+        left: 0;
+        width: 25%;
+        height: auto;
+        z-index: -1;
+    }
+
+    .filmHolder {
+        text-align: left;
+    }
+
+    .divider {
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+
+    .controller {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 50px;
+        cursor: pointer;
+    }
+
+    .slider {
+        -webkit-appearance: none;
+        margin-left: 50px;
+        width: 25%;
+        height: 25px;
+        background: white;
+        display: block;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+    }
+
+    .slider:hover {
+        opacity: 1;
+    }
+
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        background: goldenRod;
+        cursor: pointer;
+    }
+
+    .download {
+        padding-left: 10px;
+        padding-right: 10px;
+        color: darkgoldenrod;
+        font-family: Krylon;
+        font-size: 20px;
+    }
+
+    .reference {
+        color: darkgoldenrod;
+        font-family: Krylon;
+        font-size: 18px;
+    }
+
+    .thumbnail {
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        object-fit: cover;
+        width: 50%;
+        height: auto;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -562,5 +652,95 @@
             text-decoration: none;
             cursor: pointer;
             background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .filmHoriz {
+        display: inline;
+        margin: auto;
+        object-fit: contain;
+        padding-left: 50px;
+        top: 0;
+        left: 0;
+        width: 35%;
+        height: auto;
+        z-index: -1;
+    }
+
+    .filmVert {
+        display: inline;
+        margin: auto;
+        object-fit: contain;
+        padding-left: 50px;
+        top: 0;
+        left: 0;
+        width: 25%;
+        height: auto;
+        z-index: -1;
+    }
+
+    .filmHolder {
+        text-align: left;
+    }
+
+    .divider {
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+
+    .controller {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 50px;
+        cursor: pointer;
+    }
+
+    .slider {
+        -webkit-appearance: none;
+        margin-left: 50px;
+        width: 25%;
+        height: 25px;
+        background: white;
+        display: block;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+    }
+
+    .slider:hover {
+        opacity: 1;
+    }
+
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        background: goldenRod;
+        cursor: pointer;
+    }
+
+    .download {
+        padding-left: 10px;
+        padding-right: 10px;
+        color: darkgoldenrod;
+        font-family: Krylon;
+        font-size: 20px;
+    }
+
+    .reference {
+        color: darkgoldenrod;
+        font-family: Krylon;
+        font-size: 18px;
+    }
+
+    .thumbnail {
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        object-fit: cover;
+        width: 50%;
+        height: auto;
     }
 }
