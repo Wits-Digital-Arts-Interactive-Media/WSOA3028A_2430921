@@ -37,9 +37,6 @@
         transform: translate(-50%, -50%);
     }
 
-    .imageCover {
-    }
-
     .portfolioLabel {
         font-family: Krylon;
         font-size: 18px;
@@ -240,6 +237,16 @@
         font-family: Krylon;
         font-size: 18px;
 
+    }
+
+    .thumbnail {
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        object-fit: cover;
+        width: 50%;
+        height: auto;
     }
 }
 
