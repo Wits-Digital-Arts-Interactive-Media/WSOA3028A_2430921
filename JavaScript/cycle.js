@@ -17,7 +17,7 @@ let x = 0;
 
 export function initialise() {
     displayPic.src = (portfolioPictures[x].href);
-    setInterval(updateImages(), 5000);
+    setInterval(updateImages(), 2000);
 }
 
 
