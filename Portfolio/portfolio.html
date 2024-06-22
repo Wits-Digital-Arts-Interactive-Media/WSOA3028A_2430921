@@ -28,40 +28,49 @@
 
 
     <h1 class="title">Portfolio</h1>
-    <h2>Photography</h2>
+    <div>
+        <h2>Photography</h2>
+
+        <script type="module">
+            import { initialise } from "../JavaScript/portfolio.js"
+            initialise(8)</script>
+
+        <hr>
+    </div>
+    <div>
+        <h2>Games</h2>
+        <hr>
+        <h3>A Walk in the Woods</h3>
+        <p>
+            Made by
+            <h4>
+                Suhail Jadwat
+            </h4>
+        </p>
+        <a href="Games/AWW.zip" class="download" download>Download</a>
+        <hr>
+        <h3>Lefa</h3>
+        <p>
+            Made by
+            <h4>
+                Suhail Jadwat
+            </h4>
+            <h4>
+                Nompumelelo Mkhwanazi
+            </h4>
+            <h4>
+                Vuyo Tswago
+            </h4>
+            <a href="https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2562617/" class="reference">Zandile Gebuza</a>
+        </p>
+        <a href="Games/Lefa.zip" class="download" download>Download</a>
+        <hr>
+    </div>
     <script type="module">
-        import { initialise } from "../JavaScript/portfolio.js"
-        initialise(8)</script>
 
-    <hr>
-    <h2>Games</h2>
-    <hr>
-    <h3>A Walk in the Woods</h3>
-    <p>
-        Made by
-        <h4>
-            Suhail Jadwat
-        </h4>
-    </p>
-    <a href="Games/AWW.zip" class="download" download>Download</a>
-    <hr>
-    <h3>Lefa</h3>
-    <p>
-        Made by
-        <h4>
-            Suhail Jadwat
-        </h4>
-        <h4>
-            Nompumelelo Mkhwanazi
-        </h4>               
-        <h4>
-            Vuyo Tswago
-        </h4>
-        <a href="https://wits-digital-arts-interactive-media.github.io/WSOA3028A_2562617/" class="reference">Zandile Gebuza</a>
-    </p>
-    <a href="Games/Lefa.zip" class="download" download>Download</a>
-
-
+        import { initialise } from "../JavaScript/scroll.js"
+        initialise()
+    </script>
 
 </body>
 
