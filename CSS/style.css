@@ -231,12 +231,11 @@
         
         display: block;
         margin: auto;
-        object-fit: contain;
-        
+        object-fit: contain;        
         top: 0;
         left: 0;
         width: 100vw;
-        height: 100vh;
+        height: 45vh;
         z-index: -1;
     }
 
@@ -255,7 +254,7 @@
         padding-top: 5px;
         padding-bottom: 5px;
         object-fit: cover;
-        width: 70%;
+        width: 100%;
         height: auto;
     }
 }
@@ -365,7 +364,7 @@
         top: 0;
         left: 0;
         width: 100vw;
-        height: 100vh;
+        height: 30vh;
         z-index: -1;
     }
 
@@ -384,7 +383,7 @@
         padding-top: 5px;
         padding-bottom: 5px;
         object-fit: cover;
-        width: 70%;
+        width: 100%;
         height: auto;
     }
 }
