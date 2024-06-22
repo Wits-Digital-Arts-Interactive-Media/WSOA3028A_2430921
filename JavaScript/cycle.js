@@ -13,20 +13,21 @@ const portfolioPictures =
 
 const displayPic = document.getElementById("display");
 
-let x = 0;
+let picIndex = 0;
 
 export function initialise() {
-    displayPic.src = (portfolioPictures[x].href);
+    displayPic.src = (portfolioPictures[picIndex].href);
     setInterval(updateImages(), 2000);
 }
 
 
 
 function updateImages() {
-    x++;
-    if (x >= 7) {
-        x = 0;
+    console.log(picIndex);
+    picIndex++;
+    if (picIndex >= 7) {
+        picIndex = 0;
     }
-    displayPic.src = (portfolioPictures[x].href); 
+    displayPic.src = (portfolioPictures[picIndex].href); 
 
 }
