@@ -29,9 +29,10 @@ const portfolioPictures =
 
 
 
-export function initialise(numOfPics) {
+export function initialise(numOfPics, divId) {
  
-    
+    let portfolioHolder = document.getElementById(divId);
+
     const img = [
         document.createElement('img'),
     ]
@@ -70,8 +71,8 @@ export function initialise(numOfPics) {
         
        //img[i - 1].appendChild(div[i - 1]);
         
-        
-        document.body.appendChild(container);
+        portfolioHolder.appendChild(container);
+        //document.body.appendChild(container);
         
 
 
