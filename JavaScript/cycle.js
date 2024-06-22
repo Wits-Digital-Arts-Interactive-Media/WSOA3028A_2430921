@@ -17,17 +17,19 @@ let picIndex = 0;
 
 export function initialise() {
     displayPic.src = (portfolioPictures[picIndex].href);
-    
+    setInterval(function updateImages() {
+        picIndex++;
+        console.log(picIndex);
+        if (picIndex >= 7) {
+            picIndex = 0;
+        }
+        displayPic.src = (portfolioPictures[picIndex].href);
+        }, 2000);    
 }
 
-setInterval(updateImages(), 2000);
 
-function updateImages() {   
-    picIndex++;
-    console.log(picIndex);
-    if (picIndex >= 7) {
-        picIndex = 0;
-    }
-    displayPic.src = (portfolioPictures[picIndex].href); 
 
-}
+/*function updateImages() {   
+
+
+}*/
